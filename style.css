@@ -1,0 +1,240 @@
+body {
+  max-width: 100vw;
+  height: max-content;
+  margin: 0;
+
+  background: #f2f2f2;
+}
+.Head {
+  width: calc(100%);
+  height: 8vh;
+  background: #f2f2f2;
+  border-bottom: 1px solid #c7c7c8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.White .Head .headerInfo p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0 66px;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #3243c7;
+}
+.White .Head .headerContacts p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #242329;
+}
+.logoIcon {
+  height: 100%;
+  position: relative;
+  min-width: 10vh;
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3Csvg width='44' height='53' viewBox='0 0 44 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.9828 39.8909C16.2012 39.8909 18.3528 39.8909 20.5177 39.8909C26.1706 39.8909 31.8235 39.8775 37.4898 39.9043C38.3049 39.9043 38.8662 39.6102 39.0667 38.8619C39.4141 37.619 39.8151 36.3762 39.9086 35.1066C40.0823 32.5541 40.1625 29.9883 39.5879 27.4625C39.5745 27.3823 39.5611 27.2888 39.5344 27.1953C39.0132 25.204 38.8128 25.0437 36.7681 25.0437C29.3913 25.0437 22.0278 25.0437 14.651 25.0437C14.4372 25.0437 14.21 25.0437 13.9561 25.0437C13.9561 23.7875 13.9561 22.5714 13.9561 21.2884C14.2501 21.2884 14.5173 21.2884 14.7712 21.2884C22.4154 21.2884 30.0461 21.3152 37.6902 21.2751C39.3874 21.2617 40.5768 22.0101 41.4989 23.3197C42.6749 25.0036 43.1827 26.928 43.5168 28.9192C44.0247 31.9661 43.9178 34.9864 43.1427 37.9799C42.7417 39.5434 42.1537 41.0135 41.0579 42.2563C40.1224 43.312 38.9865 43.7798 37.5833 43.7664C34.3359 43.7397 31.0751 43.753 27.8277 43.753C23.4176 43.753 19.0076 43.753 14.5975 43.753C14.3971 43.753 14.1966 43.753 13.9828 43.753C13.9828 42.4567 13.9828 41.1872 13.9828 39.8909Z' fill='%23414C9E'/%3E%3Cpath d='M8.77056 35.147C10.2807 35.147 11.7106 35.147 13.2074 35.147C13.2074 35.4276 13.2074 35.6682 13.2074 35.8953C13.2074 38.4612 13.2341 41.0137 13.194 43.5795C13.1673 44.8224 13.7018 45.7044 14.6774 46.386C16.0538 47.3348 17.6174 47.7223 19.2344 47.9495C21.9607 48.3237 24.6468 48.2302 27.2928 47.3882C27.7338 47.2412 28.1615 47.0541 28.5758 46.8403C29.4578 46.386 30.1527 45.7445 30.3264 44.6887C31.743 44.6887 33.1328 44.6887 34.5627 44.6887C34.4826 46.4929 33.7342 47.9228 32.4379 49.0854C30.6872 50.6356 28.5891 51.4508 26.344 51.9186C21.8671 52.8407 17.4838 52.6402 13.3143 50.6223C11.1092 49.5532 9.45211 47.9228 8.91756 45.4104C8.81065 44.9159 8.74383 44.3947 8.74383 43.8869C8.73047 41.1072 8.73047 38.3142 8.73047 35.5345C8.74383 35.4276 8.7572 35.3207 8.77056 35.147Z' fill='%23CF2F1E'/%3E%3Cpath d='M29.4711 30.4428C29.4711 31.699 29.4711 32.9151 29.4711 34.2114C29.177 34.2247 28.8697 34.2515 28.5757 34.2515C21.0919 34.2515 13.6082 34.2515 6.12445 34.2515C4.81479 34.2515 4.37379 34.6658 4.10651 35.962C3.90605 36.9376 3.98624 37.8731 4.32033 38.7818C4.64106 39.6505 5.01525 39.8776 5.93736 39.8776C6.60555 39.8776 7.26037 39.8776 7.95529 39.8776C7.95529 41.2007 7.95529 42.4702 7.95529 43.8066C6.12445 43.82 4.25351 44.1273 2.70331 42.7509C1.66093 41.8288 1.07292 40.6394 0.778919 39.3164C0.311185 37.1782 0.378004 35.08 1.39365 33.0755C2.2623 31.3783 3.63878 30.4161 5.53644 30.4027C13.4211 30.376 21.3058 30.3893 29.1904 30.3893C29.2572 30.4161 29.3241 30.4294 29.4711 30.4428Z' fill='%23414C9E'/%3E%3Cpath d='M13.9023 6.69516C13.9023 5.3855 13.9023 4.16939 13.9023 2.8731C14.1563 2.8731 14.3968 2.8731 14.6374 2.8731C22.1879 2.8731 29.7385 2.9132 37.2757 2.85974C39.7881 2.84638 41.4586 3.94221 42.3272 6.21406C43.3696 8.92692 43.3161 11.6264 41.7659 14.1522C40.8839 15.5821 39.5342 16.277 37.8637 16.3037C37.1821 16.3171 36.4872 16.3037 35.7522 16.3037C35.7522 14.9941 35.7522 13.7112 35.7522 12.3481C36.4605 12.3481 37.1688 12.3213 37.8637 12.3614C38.425 12.3881 38.8259 12.1743 39.0397 11.6665C39.6812 10.143 39.7079 8.61955 38.8392 7.18962C38.6655 6.89562 38.1042 6.69516 37.7167 6.69516C33.4002 6.65507 29.0837 6.66843 24.7538 6.66843C21.3727 6.66843 17.9917 6.66843 14.5973 6.66843C14.3968 6.69516 14.183 6.69516 13.9023 6.69516Z' fill='%23414C9E'/%3E%3Cpath d='M7.83521 21.3152C7.83521 22.5848 7.83521 23.7608 7.83521 24.9368C4.90854 25.2977 3.35833 25.0705 1.72794 21.9968C0.792477 20.2729 0.41829 18.3618 0.164377 16.4374C-0.169718 13.7379 0.00401128 11.0652 0.69893 8.4325C1.11321 6.82885 1.75467 5.31873 2.97078 4.12935C3.83943 3.27407 4.86844 2.83306 6.08455 2.85979C6.68592 2.87315 7.2873 2.85979 7.94212 2.85979C7.94212 4.10263 7.94212 5.30537 7.94212 6.61502C7.4343 6.61502 6.91311 6.65512 6.39192 6.60166C5.52327 6.54821 4.93526 6.94912 4.70808 7.72422C4.37398 8.87351 4.02652 10.0362 3.93298 11.2122C3.73252 13.9651 3.6657 16.7181 4.40071 19.4309C4.48089 19.7249 4.5878 20.0189 4.70808 20.3129C4.98872 20.9945 5.44309 21.3954 6.24492 21.3152C6.73938 21.2751 7.26057 21.3152 7.83521 21.3152Z' fill='%23414C9E'/%3E%3Cpath d='M29.4713 12.4016C29.4713 13.6845 29.4713 14.914 29.4713 16.1969C21.8673 16.1969 14.2632 16.1969 6.61914 16.1969C6.61914 14.9541 6.61914 13.6979 6.61914 12.4016C14.2232 12.4016 21.8004 12.4016 29.4713 12.4016Z' fill='%23414C9E'/%3E%3Cpath d='M34.7632 7.4436C34.7632 11.7868 34.7632 16.1034 34.7632 20.46C33.3066 20.46 31.8633 20.46 30.3799 20.46C30.3799 16.1301 30.3799 11.8136 30.3799 7.4436C31.8232 7.4436 33.2531 7.4436 34.7632 7.4436Z' fill='%23CF2F1E'/%3E%3Cpath d='M30.3662 26.0596C31.8229 26.0596 33.2662 26.0596 34.7495 26.0596C34.7495 30.3226 34.7495 34.5723 34.7495 38.8488C33.2795 38.8488 31.8496 38.8488 30.3662 38.8488C30.3662 34.5723 30.3662 30.336 30.3662 26.0596Z' fill='%23CF2F1E'/%3E%3Cpath d='M8.86426 17.1458C10.3076 17.1458 11.7241 17.1458 13.154 17.1458C13.1808 17.266 13.2075 17.3462 13.2075 17.4398C13.2075 21.4355 13.2075 25.4447 13.2075 29.4939C11.7642 29.4939 10.3343 29.4939 8.86426 29.4939C8.86426 25.4046 8.86426 21.3019 8.86426 17.1458Z' fill='%23CF2F1E'/%3E%3Cpath d='M8.85059 0C10.2939 0 11.6971 0 13.1404 0C13.1404 3.82205 13.1404 7.61738 13.1404 11.4662C11.7238 11.4662 10.2939 11.4662 8.85059 11.4662C8.85059 7.63074 8.85059 3.82205 8.85059 0Z' fill='%23CF2F1E'/%3E%3Cpath d='M30.3398 2.09818C30.3398 1.36317 30.3398 0.708347 30.3398 0.0134277C31.7965 0.0134277 33.2264 0.0134277 34.7232 0.0134277C34.7232 0.694983 34.7232 1.37654 34.7232 2.09818C33.2665 2.09818 31.8366 2.09818 30.3398 2.09818Z' fill='%23CF2F1E'/%3E%3Cpath d='M37.0888 34.2112C36.5141 34.2112 35.9929 34.2112 35.4316 34.2112C35.4316 32.9417 35.4316 31.7122 35.4316 30.4426C35.9796 30.4426 36.5141 30.4426 37.0888 30.4426C37.0888 31.7122 37.0888 32.9417 37.0888 34.2112Z' fill='%23414C9E'/%3E%3C/svg%3E%0A");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 48%;
+  border-right: 1px solid #c7c7c8;
+}
+.headerInfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerContacts {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-right: 66px;
+  justify-content: center;
+}
+
+.headerContacts svg {
+  cursor: pointer;
+}
+
+.headerContacts svg path {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s all;
+}
+
+.headerContacts svg:not(:last-child) {
+  margin-right: 14px;
+}
+
+.headerContacts svg:hover path {
+  fill: #3243c7;
+}
+/*---------------------- Menu----------------- */
+.leftMenu {
+  width: 10vh;
+  height: 100%;
+  border-right: 1px solid #c7c7c8;
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.blockRefs a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  white-space: nowrap;
+  margin: 0 20px;
+}
+
+.White .leftMenu a {
+  color: #242329;
+}
+
+.White .leftMenu .blockRefs {
+  transform: rotate(-90deg);
+  display: flex;
+  flex-direction: row;
+}
+/*---------------------- Footer----------------- */
+.Foot {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #c7c7c8;
+  height: 7vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 2;
+}
+.iconMouse {
+  height: 100%;
+  position: relative;
+  min-width: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.feature {
+  margin-left: 66px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  cursor: pointer;
+}
+.White .Foot .feature {
+  color: #242329;
+}
+.arrow {
+  margin-left: 20px;
+  padding-top: 2px;
+}
+
+/*---------------------- Page----------------- */
+.Page {
+  width: calc(100%);
+  height: 85vh;
+  margin: 0;
+}
+
+main {
+  padding-top: 8vh;
+  padding-bottom: 7vh;
+  padding-left: 10vh;
+  z-index: 1;
+}
+.infoName {
+  padding-left: 108px;
+  padding-top: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: max-content;
+}
+.infoName h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 50px;
+  color: #242329;
+}
+.range {
+  margin-top: 125px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.range p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #242329;
+}
+.circle {
+  width: 80px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-left: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.circle p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+  color: #3243c7;
+  cursor: pointer;
+}
+.circleF {
+  width: 100%;
+  height: 100%;
+  background: #3243c7;
+  border-radius: 50%;
+  margin-left: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+}
+.circleF p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #ffffff;
+  cursor: pointer;
+}
