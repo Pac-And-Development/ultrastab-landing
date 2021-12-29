@@ -16,23 +16,40 @@ body {
   top: 0;
   z-index: 2;
 }
-.White .Head .headerInfo p {
+.Head .headerInfo p {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
+  transition: 400ms all;
   margin: 0 66px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.White .Head .headerInfo p {
   color: #3243c7;
 }
-.White .Head .headerContacts p {
+
+.Purple .Head .headerInfo p {
+  color: white !important;
+}
+
+.Head .headerContacts p {
   font-family: Roboto;
+  transition: 400ms all;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
+}
+
+.White .Head .headerContacts p {
   color: #242329;
+}
+
+.Purple .Head .headerContacts p {
+  color: white;
 }
 .logoIcon {
   height: 100%;
@@ -77,7 +94,16 @@ body {
 .headerContacts svg:hover path {
   fill: #3243c7;
 }
+
+.Purple .Head .headerInfo .headerContacts svg path {
+  fill: white;
+}
 /*---------------------- Menu----------------- */
+
+.Purple .leftMenu .blockRefs a {
+  color: white;
+}
+
 .leftMenu {
   width: 10vh;
   height: 100%;
@@ -95,6 +121,7 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
+  transition: 400ms all;
   line-height: 18px;
   white-space: nowrap;
   margin: 0 20px;
@@ -104,7 +131,7 @@ body {
   color: #242329;
 }
 
-.White .leftMenu .blockRefs {
+.leftMenu .blockRefs {
   transform: rotate(-90deg);
   display: flex;
   flex-direction: row;
@@ -130,6 +157,40 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.Foot .feature {
+  transition: 400ms all;
+}
+
+.Foot .arrow svg path {
+  transition: 400ms all;
+}
+
+.Foot .iconMouse svg rect {
+  transition: 400ms all;
+}
+
+.Foot .iconMouse svg circle {
+  transition: 400ms all;
+}
+
+.Purple .Foot .iconMouse svg rect {
+  stroke: white;
+}
+
+.Purple .Foot .iconMouse svg circle {
+  stroke: white;
+  fill: white;
+}
+
+.Purple .Foot .feature {
+  color: white;
+}
+
+.Purple .Foot .arrow svg path {
+  stroke: white;
+}
+
 .feature {
   margin-left: 66px;
   font-family: Roboto;
@@ -161,7 +222,7 @@ body {
 main {
   top: 0;
   position: absolute;
-  transition: all 1s;
+  transition: all 500ms;
   padding-top: 8vh;
   padding-bottom: 7vh;
   padding-left: 10vh;
@@ -182,6 +243,7 @@ main {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
+  transition: 400ms all;
   font-size: 30px;
   line-height: 50px;
   color: #242329;
@@ -269,6 +331,7 @@ main {
 
 .background {
   width: 100vw;
+  transition: 400ms all;
   height: 100vh;
   position: fixed;
   left: 0;
@@ -278,6 +341,14 @@ main {
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url(./images/background1.png);
+}
+
+.background.first {
+  background-image: url(./images/background1.png);
+}
+
+.background.second {
+  background-image: url(./images/background2.png);
 }
 
 body {
@@ -290,4 +361,30 @@ body {
   background: #ffffff;
   width: 30vw;
   height: 40vw;
+}
+
+/*--------------------------- PAGE PRIMENENIE ----------------*/
+
+.primPage {
+  display: flex;
+  margin-left: 5%;
+  margin-top: 3%;
+  width: 100%;
+}
+
+.Purple main .Page .primPage .infoName h1 {
+  color: white;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.primPage .infoName p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  width: 60%;
+  transition: 400ms all;
+  line-height: 24px;
+  color: white;
 }

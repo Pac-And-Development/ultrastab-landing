@@ -30,12 +30,12 @@ const helper = {
 };
 class ScrollPages {
   constructor(currentPageNumber, totalPageNumber, pages) {
+    this.body = document.getElementsByTagName("body")[0];
+    this.background = document.querySelector(".background");
     this.currentPageNumber = currentPageNumber;
     this.totalPageNumber = totalPageNumber;
     this.pages = pages;
     this.viewHeight = document.documentElement.clientHeight;
-    console.log(document.querySelector(".Head").clientHeight);
-
     this.dopeHeights = document.querySelector(".Page").clientHeight;
   }
   mouseScroll(event) {
@@ -46,14 +46,67 @@ class ScrollPages {
       this.scrollUp();
     }
   }
+  checkBackground(number) {
+    switch (number) {
+      case 1: {
+        return "first";
+      }
+      case 2: {
+        return "second";
+      }
+      case 3: {
+        return "three";
+      }
+      case 4: {
+        return "four";
+      }
+      case 5: {
+        return "five";
+      }
+      default: {
+        return "first";
+      }
+    }
+  }
+  checkClassName(name) {
+    switch (name) {
+      case 1: {
+        return "White";
+      }
+      case 2: {
+        return "Purple";
+      }
+      case 3: {
+        return "White";
+      }
+      case 4: {
+        return "Red";
+      }
+      case 5: {
+        return "White";
+      }
+      default: {
+        return "White";
+      }
+    }
+  }
   scrollDown() {
     if (this.currentPageNumber !== this.totalPageNumber) {
-      this.pages.style.top =
-        (-this.dopeHeights - document.querySelector(".Head").clientHeight) *
-          this.currentPageNumber +
-        "px";
-      console.log(-this.dopeHeights * this.currentPageNumber);
+      this.pages.style.top = -this.dopeHeights * this.currentPageNumber + "px";
       this.currentPageNumber++;
+      this.background.classList.add(
+        this.checkBackground(this.currentPageNumber)
+      );
+      if (this.background.classList.length >= 2) {
+        this.background.classList.remove(this.background.classList[1]);
+      }
+      console.log(this.body);
+      this.body.classList.remove(this.body.classList);
+      this.body.classList.add(this.checkClassName(this.currentPageNumber));
+
+      this.background.classList.add(
+        this.checkBackground(this.currentPageNumber)
+      );
 
       this.updateNav();
     }
@@ -61,11 +114,19 @@ class ScrollPages {
   scrollUp() {
     if (this.currentPageNumber !== 1) {
       this.pages.style.top =
-        (-this.dopeHeights - document.querySelector(".Head").clientHeight) *
-          (this.currentPageNumber - 2) +
-        "px";
+        -this.dopeHeights * (this.currentPageNumber - 2) + "px";
       this.currentPageNumber--;
-      console.log(this.currentPageNumber);
+      if (this.background.classList.length >= 2) {
+        this.background.classList.remove(this.background.classList[1]);
+      }
+      console.log(this.body);
+      this.body.classList.remove(this.body.classList);
+      this.body.classList.add(this.checkClassName(this.currentPageNumber));
+
+      this.background.classList.add(
+        this.checkBackground(this.currentPageNumber)
+      );
+
       this.updateNav();
     }
   }
@@ -142,6 +203,6 @@ class ScrollPages {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  var s = new ScrollPages(1, 4, document.getElementById("all-pages"));
+  var s = new ScrollPages(1, 2, document.getElementById("all-pages"));
   s.init();
 });

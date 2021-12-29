@@ -11,6 +11,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          draggable: true,
+        },
+      });
+    </script>
     <title>Ultrastab</title>
   </head>
   <body class="White">
@@ -125,12 +139,24 @@
           </span>
         </div>
         <div class="Form">
-          <form>
-            
-          </form>
+          <form></form>
         </div>
       </div>
-      <div class="Page"></div>
+      <div class="Page">
+        <div class="primPage">
+          <div style="padding: 0; justify-content: flex-start" class="infoName">
+            <h1>Применение</h1>
+            <p>
+              Компания УльтраСтаб предлагает к продаже нити из полиэфира с
+              требуемыми свойствами, которые уже давно заняли лидирующие позиции
+              во многих отраслях производства. Изготавливаются они путем
+              соединения таких веществ, как терефталевая кислота, этиленгликоль
+              и двухатомный спирт. Среди всех химических волокон ПЭ нити и
+              волокна занимают одно из лидирующих мест.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="Foot">
