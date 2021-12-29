@@ -17,14 +17,7 @@
     />
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        scrollbar: {
-          el: ".swiper-scrollbar",
-          draggable: true,
-        },
-      });
-    </script>
+
     <title>Ultrastab</title>
   </head>
   <body class="White">
@@ -189,6 +182,51 @@
               и двухатомный спирт. Среди всех химических волокон ПЭ нити и
               волокна занимают одно из лидирующих мест.
             </p>
+            <div class="swiper mySwiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="circleSecond"><p>НTLE</p></div>
+                  <p>Высоко<br></br>модульные</p>
+                  <p>Для производства технических тканей, силовых лент, канатов, строп, геосеток</p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="circleSecond"><p>НTLE</p></div>
+                  <p>Высоко<br></br>модульные</p>
+                  <p>Для производства технических тканей, силовых лент, канатов, строп, геосеток</p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="circleSecond"><p>НTLE</p></div>
+                  <p>Высоко<br></br>модульные</p>
+                  <p>Для производства технических тканей, силовых лент, канатов, строп, геосеток</p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="circleSecond"><p>НTLE</p></div>
+                  <p>Высоко<br></br>модульные</p>
+                  <p>Для производства технических тканей, силовых лент, канатов, строп, геосеток</p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="circleSecond"><p>НTLE</p></div>
+                  <p>Высоко<br></br>модульные</p>
+                  <p>Для производства технических тканей, силовых лент, канатов, строп, геосеток</p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="circleSecond"><p>НTLE</p></div>
+                  <p>Высоко<br></br>модульные</p>
+                  <p>Для производства технических тканей, силовых лент, канатов, строп, геосеток</p>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -294,5 +332,20 @@
     </footer>
     <script src="index.js"></script>
     <script src="./js/scroll.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        pagination: {
+          clickable: true,
+        },
+      });
+      const swip = document.querySelector('.swiper')
+      const page = document.querySelector('.Page')
+      console.log(page.clientWidth)
+      
+      swip.style.width = 100 + '%'
+      console.log(swip.style.width)
+    </script>
   </body>
 </html>
