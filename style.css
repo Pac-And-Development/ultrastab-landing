@@ -362,7 +362,7 @@ body {
   transform: translate(0%, -50%);
   background: #ffffff;
   width: 15vw;
-  height: 30vw;
+  height: max-content;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -437,17 +437,17 @@ body {
   border-radius: 23px;
   height: 2.5vw;
   margin-top: 1%;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
 }
 .Form p {
   font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 10px;
-line-height: 13px;
-
-text-align: center;
-color: rgba(36, 35, 41, 0.5);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  margin: 0;
+  text-align: center;
+  color: rgba(36, 35, 41, 0.5);
 }
 .Form p a {
   text-decoration: underline;
@@ -478,4 +478,141 @@ color: rgba(36, 35, 41, 0.5);
   transition: 400ms all;
   line-height: 24px;
   color: white;
+}
+
+/*--------------------------- PAGE PREIMYSHESTVA ----------------*/
+.InfoBenefits {
+  display: flex;
+  margin-left: 5%;
+  margin-top: 3%;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0;
+}
+.InfoBenefits h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #242329;
+  margin: 0;
+}
+.benefits {
+  position: relative;
+  width: 50%;
+  padding: 6vw 5vw 6vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.bnfRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.bnfCircle {
+  background: #ffffff;
+  min-width: 90px;
+  min-width: none;
+  height: 90px;
+  border-radius: 50%;
+}
+.bnfTire {
+  min-width: 36px;
+  height: 2px;
+  margin-left: 4%;
+  margin-right: 4%;
+  background: #242329;
+}
+.bnfRow p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #242329;
+}
+
+
+
+/*--------------------------- PAGE ABOUT COMPANY ----------------*/
+
+.About {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-top: 3%;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0;
+  background-color: rgba(233, 102, 102, 0.459);
+}
+.About h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color:  #FFFFFF;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.About p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  width: 60%;
+  transition: 400ms all;
+  line-height: 24px;
+  color: white;
+  margin-bottom: 3%;
+}
+.aboutInfo {
+  padding: 30px 50px;
+  background: rgba(255, 255, 255, 0.26);
+  border-top: 3px solid #FFFFFF;
+  position: relative;
+}
+.aboutInfo p {
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+color: #FFFFFF;
+margin-bottom: 4%;
+}
+.aboutImg {
+  position: absolute;
+  background-image: url(images/img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 0;
+  top: 0;
+  width: 410px;
+  height: 300px;
+  display: block;
+  z-index: 1;
+}
+.companyInfo {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  left: 50px;
+  top: 80%;
+
+}
+.companyCircle {
+  min-width: 100px;
+min-height: 100px;
+border-radius: 50%;
+margin-right: 10%;
+background: #FFFFFF;
 }
