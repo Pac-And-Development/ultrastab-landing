@@ -48,16 +48,22 @@ class ScrollPages {
   }
   scrollDown() {
     if (this.currentPageNumber !== this.totalPageNumber) {
-      this.pages.style.top = -this.dopeHeights * this.currentPageNumber + "px";
+      this.pages.style.top =
+        (-this.dopeHeights - document.querySelector(".Head").clientHeight) *
+          this.currentPageNumber +
+        "px";
+      console.log(-this.dopeHeights * this.currentPageNumber);
       this.currentPageNumber++;
-      console.log(this.currentPageNumber);
+
       this.updateNav();
     }
   }
   scrollUp() {
     if (this.currentPageNumber !== 1) {
       this.pages.style.top =
-        -this.dopeHeights * (this.currentPageNumber - 2) + "px";
+        (-this.dopeHeights - document.querySelector(".Head").clientHeight) *
+          (this.currentPageNumber - 2) +
+        "px";
       this.currentPageNumber--;
       console.log(this.currentPageNumber);
       this.updateNav();
@@ -136,6 +142,6 @@ class ScrollPages {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  var s = new ScrollPages(1, 2, document.getElementById("all-pages"));
+  var s = new ScrollPages(1, 4, document.getElementById("all-pages"));
   s.init();
 });
