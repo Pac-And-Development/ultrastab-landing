@@ -492,6 +492,10 @@
       
       swip.style.width = 100 + '%'
       console.log(swip.style.width)
+      console.log(window.pageYOffset)
+      if (window.pageYOffset !== 0) {
+        setTimeout(() => { window.scrollTo(0, 0)}, 80);
+      };
     </script>
   </body>
 </html>
