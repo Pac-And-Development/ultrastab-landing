@@ -27,11 +27,41 @@ body {
   text-transform: uppercase;
 }
 
+.paymentRequest {
+  cursor: pointer;
+  margin-left: 46px;
+  border: none;
+  width: 164px;
+  background-color: #cb3c38;
+  border-radius: 23px;
+  padding: 12px 23px;
+  transition: 400ms all;
+  white-space: nowrap;
+  color: white;
+  overflow: hidden;
+}
+
+.closed {
+  padding: 12px 0;
+  width: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+.Red .Head .headerInfo .headerContacts .paymentRequest {
+  background-color: white;
+  color: black;
+}
+
 .White .Head .headerInfo p {
   color: #3243c7;
 }
 
 .Purple .Head .headerInfo p {
+  color: white !important;
+}
+
+.Red .Head .headerInfo p {
   color: white !important;
 }
 
@@ -51,6 +81,11 @@ body {
 .Purple .Head .headerContacts p {
   color: white;
 }
+
+.Red .Head .headerContacts p {
+  color: white;
+}
+
 .logoIcon {
   height: 100%;
   position: relative;
@@ -98,9 +133,17 @@ body {
 .Purple .Head .headerInfo .headerContacts svg path {
   fill: white;
 }
+
+.Red .Head .headerInfo .headerContacts svg path {
+  fill: white;
+}
 /*---------------------- Menu----------------- */
 
 .Purple .leftMenu .blockRefs a {
+  color: white;
+}
+
+.Red .leftMenu .blockRefs a {
   color: white;
 }
 
@@ -191,6 +234,23 @@ body {
   stroke: white;
 }
 
+.Red .Foot .iconMouse svg rect {
+  stroke: white;
+}
+
+.Red .Foot .iconMouse svg circle {
+  stroke: white;
+  fill: white;
+}
+
+.Red .Foot .feature {
+  color: white;
+}
+
+.Red .Foot .arrow svg path {
+  stroke: white;
+}
+
 .feature {
   margin-left: 66px;
   font-family: Roboto;
@@ -212,8 +272,9 @@ body {
 .Page {
   width: 100%;
   height: 85vh;
+  transition: 700ms all;
   margin: 0;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -462,6 +523,34 @@ body {
 
 /*--------------------------- PAGE PRIMENENIE ----------------*/
 
+.navButtons {
+  margin-top: 40px;
+  margin-left: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.button-prev {
+  transition: 400ms all;
+  transform: rotate(180deg);
+  width: 66px;
+  height: 66px;
+  cursor: pointer;
+}
+
+.swiper-button-disabled {
+  cursor: not-allowed !important;
+  opacity: 0.6;
+}
+
+.button-next {
+  transition: 400ms all;
+  margin-left: 15px;
+  width: 66px;
+  cursor: pointer;
+  height: 66px;
+}
+
 .circleSecond p {
   color: #3243c7 !important;
   width: max-content !important;
@@ -476,7 +565,22 @@ body {
   width: 100%;
 }
 
+.spanRed {
+  transition: 400ms all;
+  color: white;
+}
+
+.White .Head .headerInfo p .spanRed {
+  color: #cb3c38;
+}
+
 .Purple main .Page .primPage .infoName h1 {
+  color: white;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.Red main .Page .primPage .infoName h1 {
   color: white;
   margin: 0;
   margin-bottom: 30px;
@@ -531,7 +635,8 @@ body {
 }
 
 .swiper-slide {
-  width: 180px !important;
+  min-width: 180px !important;
+  max-width: 288px !important;
 }
 
 /*--------------------------- PAGE PREIMYSHESTVA ----------------*/
