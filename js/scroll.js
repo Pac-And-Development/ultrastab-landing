@@ -32,9 +32,11 @@ class ScrollPages {
   constructor(currentPageNumber, totalPageNumber, pages) {
     this.body = document.getElementsByTagName("body")[0];
     this.background = document.querySelector(".background");
+    this.rashBtn = document.querySelector(".paymentRequest");
     this.currentPageNumber = currentPageNumber;
     this.totalPageNumber = totalPageNumber;
     this.pages = pages;
+    this.slidePages = document.querySelectorAll(".Page");
     this.viewHeight = document.documentElement.clientHeight;
     this.dopeHeights = document.querySelector(".Page").clientHeight;
   }
@@ -100,7 +102,20 @@ class ScrollPages {
       if (this.background.classList.length >= 2) {
         this.background.classList.remove(this.background.classList[1]);
       }
-      console.log(this.body);
+      for (let i = 1; i <= this.slidePages.length; i++) {
+        console.log(i);
+        console.log(this.currentPageNumber);
+        if (i !== this.currentPageNumber) {
+          this.slidePages[i - 1].style.opacity = 0;
+          this.slidePages[i - 1].style.transform = "scale(0.8)";
+        } else {
+          this.slidePages[i - 1].style.opacity = 1;
+          this.slidePages[i - 1].style.transform = "scale(1)";
+        }
+      }
+      if (this.currentPageNumber !== 1) {
+        this.rashBtn.classList.remove("closed");
+      }
       this.body.classList.remove(this.body.classList);
       this.body.classList.add(this.checkClassName(this.currentPageNumber));
 
@@ -116,6 +131,21 @@ class ScrollPages {
       this.pages.style.top =
         -this.dopeHeights * (this.currentPageNumber - 2) + "px";
       this.currentPageNumber--;
+      if (this.currentPageNumber === 1) {
+        this.rashBtn.classList.add("closed");
+      }
+      console.log(this.pages);
+      for (let i = 1; i <= this.slidePages.length; i++) {
+        console.log(i);
+        console.log(this.currentPageNumber);
+        if (i !== this.currentPageNumber) {
+          this.slidePages[i - 1].style.opacity = 0;
+          this.slidePages[i - 1].style.transform = "scale(0.8)";
+        } else {
+          this.slidePages[i - 1].style.opacity = 1;
+          this.slidePages[i - 1].style.transform = "scale(1)";
+        }
+      }
       if (this.background.classList.length >= 2) {
         this.background.classList.remove(this.background.classList[1]);
       }
