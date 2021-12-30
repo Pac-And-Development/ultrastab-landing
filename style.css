@@ -356,6 +356,9 @@ main {
 .background.four {
   background-image: url(./images/background4.png);
 }
+.background.five {
+  background-color: #F2F2F2;
+}
 body {
   overflow: hidden;
 }
@@ -665,4 +668,141 @@ body {
   border-radius: 50%;
   margin-right: 10%;
   background: #ffffff;
+}
+/*--------------------------- PAGE CONTACTS ----------------*/
+.Contacts {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-top: 3%;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0;
+ 
+  z-index: 2;
+}
+.contactsBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 50%;
+  
+}
+.contactLine {
+  width: 100vw;
+  height: 1px;
+  background-color: #C7C7C8;
+  transform: rotate(90deg);
+  position: absolute;
+  left: -11.5%;
+  
+  z-index: 3;
+}
+.contactsBlock h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #242329;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.contactIcons {
+  margin-top: 2%;
+  width: 100%;
+  position: relative;
+}
+.contactIcons svg {
+  margin-right: 1%;
+}
+.check {
+  margin-top: 4%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 4%;
+  border-bottom: 1px solid #c7c7c8;
+
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 22px;
+color: #242329;
+transition: 0.3ms all;
+}
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+}
+input[type="radio"] + label span {
+  background-color: #fff;
+}
+input[type="radio"]:checked + label {
+  color: #333;
+  font-weight: 700;
+}
+input[type="radio"]:checked + label span {
+  background-color: #414C9E;
+  border: 5px solid #ffffff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.24s linear;
+  -o-transition: background-color 0.24s linear;
+  -moz-transition: background-color 0.24s linear;
+  transition: background-color 0.24s linear;
+}
+.infoCont {
+  width: 100%;
+  position: relative;
+margin-top: 4%;
+}
+.infoCont p {
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 26px;
+color: #242329;
+margin: 0;
+}
+.writeBtn {
+  margin-top: 22%;
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+color: #FFFFFF;
+background: #CB3C38;
+border-radius: 23px;
+width: 190px;
+height: 2.5vw;
+border: none;
+outline: none;
+
 }
