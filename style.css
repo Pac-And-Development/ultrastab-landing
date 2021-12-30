@@ -797,14 +797,15 @@ body {
   
 }
 .contactLine {
-  width: 100vw;
-  height: 1px;
-  background-color: #C7C7C8;
-  transform: rotate(90deg);
+  width: 100%;
+  height: 100vw;
+
   position: absolute;
-  left: -11.5%;
+  left: 0%;
   
-  z-index: 3;
+ 
+  border-right: 1px solid #C7C7C8;
+  z-index: -1;
 }
 .contactsBlock h2 {
   font-family: Roboto;
