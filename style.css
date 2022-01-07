@@ -149,7 +149,7 @@ body {
 
 .leftMenu {
   width: 10vh;
-  height: 100%;
+  height: 100vh;
   border-right: 1px solid #c7c7c8;
   position: fixed;
   left: 0;
@@ -274,7 +274,8 @@ body {
   height: 85vh;
   transition: 700ms all;
   margin: 0;
-  overflow: visible;
+
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -430,7 +431,7 @@ body {
   right: 0%;
   transform: translate(0%, -50%);
   background: #ffffff;
-  width: 15vw;
+  width: max-content; /* 15vw */
   height: max-content;
   display: flex;
   flex-direction: column;
@@ -504,7 +505,8 @@ body {
   border: none;
   background: #cb3c38;
   border-radius: 23px;
-  height: 2.5vw;
+  height: max-content;
+  padding: 10px 0;
   margin-top: 1%;
   margin-bottom: 4%;
 }
@@ -913,4 +915,132 @@ input[type="radio"]:checked + label span {
   bottom: 0;
   width: 50%;
   height: 99.6%;
+}
+
+.nextText {
+  color: #3243c7;
+  font-weight: bold;
+  line-height: 98px;
+  font-size: 88px;
+}
+
+@media screen and (max-width: 1200px) {
+  .Head .headerInfo p {
+    font-size: 22px;
+    margin: 0 44px;
+  }
+  .logoIcon {
+    min-width: 8vh;
+  }
+  .iconMouse {
+    min-width: 8vh;
+  }
+  .leftMenu {
+    width: 8vh;
+  }
+  .infoName h1 {
+    font-size: 24px;
+  }
+
+  .nextText {
+    font-size: 67px;
+  }
+
+  .range p {
+    font-size: 16px;
+  }
+
+  .circle {
+    width: 66px;
+    height: 66px;
+  }
+  .Form p {
+    font-size: 9px;
+  }
+  .Form h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 6%;
+  }
+
+  .form-label {
+    font-size: 12px;
+  }
+
+  .formBtn {
+    font-size: 13px;
+  }
+  .infoName {
+    padding: 60px 0 0 60px;
+  }
+  .Head .headerContacts p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .Head .headerInfo p {
+    font-size: 22px;
+    margin: 0 44px;
+  }
+  .logoIcon {
+    min-width: 8vh;
+  }
+  .iconMouse {
+    min-width: 8vh;
+  }
+  .leftMenu {
+    width: 8vh;
+  }
+
+  .Form h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 6%;
+  }
+
+  .form-label {
+    font-size: 12px;
+  }
+
+  .formBtn {
+    font-size: 13px;
+  }
+
+  /**/
+  .Head .headerContacts p {
+    font-size: 16px;
+  }
+
+  .infoName h1 {
+    font-size: 20px;
+  }
+
+  .infoName {
+    padding: 30px 0 0 30px;
+  }
+
+  .nextText {
+    line-height: 38px;
+    font-size: 60px;
+  }
+  .range p {
+    font-size: 14px;
+  }
+  .range {
+    margin-top: 83px;
+  }
+  .circle {
+    width: 56px;
+    height: 56px;
+  }
+  .blockRefs a {
+    font-size: 14px;
+  }
+  .feature {
+    font-size: 14px;
+  }
+  .Form p {
+    font-size: 7px;
+  }
 }
