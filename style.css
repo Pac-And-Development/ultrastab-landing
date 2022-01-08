@@ -301,7 +301,16 @@ main {
   width: 100%;
   position: relative;
 }
-.infoName h2 {
+div h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  transition: 400ms all;
+  font-size: 30px;
+  line-height: 50px;
+  color: #242329;
+}
+.infoName h1 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -583,14 +592,27 @@ body {
   color: #cb3c38;
 }
 
-.Purple main .Page .primPage .infoName h1 
-{
+
+
+.Purple main .Page div div h1 {
   color: white;
   margin: 0;
   margin-bottom: 30px;
 }
 
-.Red main .Page .primPage .infoName h1 {
+.Purple main .Page div h2 {
+  color: white;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.Red main .Page div div h1 {
+  color: white;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.Red main .Page div h2 {
   color: white;
   margin: 0;
   margin-bottom: 30px;
@@ -609,7 +631,7 @@ body {
 }
 
 .swiper {
-  height: 340px;
+  overflow: visible !important;
   margin: 0 !important;
 }
 
@@ -641,6 +663,7 @@ body {
   transition: 400ms all;
   line-height: 24px;
   color: white;
+  margin-bottom: 0;
   width: 100%;
 }
 
@@ -660,7 +683,7 @@ body {
   justify-content: space-between;
   padding: 0;
 }
-.infoName h2 {
+div h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -719,7 +742,7 @@ body {
   justify-content: flex-start;
   padding: 0;
 }
-.infoName h2 {
+div h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -814,7 +837,7 @@ body {
   border-right: 1px solid #c7c7c8;
   z-index: -1;
 }
-.infoName h2 {
+div h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -934,9 +957,16 @@ input[type="radio"]:checked + label span {
 }
 
 @media screen and (max-width: 1200px) {
+  .writeBtn {
+    padding: 20px 0;
+    line-height: 0;
+  }
   .Head .headerInfo p {
     font-size: 22px;
     margin: 0 44px;
+  }
+  .swiper p:nth-child(2) {
+    margin-bottom: 15px;
   }
   .logoIcon {
     min-width: 8vh;
@@ -948,6 +978,9 @@ input[type="radio"]:checked + label span {
     width: 8vh;
   }
   .infoName h1 {
+    font-size: 24px;
+  }
+  div h2 {
     font-size: 24px;
   }
 
@@ -988,41 +1021,53 @@ input[type="radio"]:checked + label span {
 }
 
 @media screen and (max-width: 1010px) {
-  .Head .headerInfo p {
-    font-size: 22px;
-    margin: 0 44px;
-  }
-  .logoIcon {
-    min-width: 8vh;
-  }
-  .iconMouse {
-    min-width: 8vh;
-  }
-  .leftMenu {
-    width: 8vh;
-  }
-
-  .Form h3 {
-    font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 6%;
-  }
-
-  .form-label {
-    font-size: 12px;
-  }
-
-  .formBtn {
-    font-size: 13px;
-  }
-
   /**/
+  .About p {
+    font-size: 14px;
+  }
+  .aboutInfo {
+    padding: 12px 38px;
+  }
+  .aboutInfo p {
+    font-size: 14px;
+  }
+  .navButtons {
+    margin-left: 71%;
+  }
+  .aboutImg {
+    width: 349px;
+    height: 256px;
+  }
+  .primPage .infoName p {
+    font-size: 14px;
+  }
+  .companyInfo {
+    top: 90%;
+  }
+  .companyCircle {
+    min-width: 66px;
+    min-height: 66px;
+  }
+  .circleSecond {
+    width: 66px;
+    height: 66px;
+  }
+  .circleSecond p {
+    font-size: 20px !important;
+  }
+  .swiper-slide {
+    max-width: 218px !important;
+  }
   .Head .headerContacts p {
     font-size: 16px;
   }
 
   .infoName h1 {
     font-size: 20px;
+  }
+  div h2 {
+    font-size: 20px;
+    margin-bottom: 0px !important;
   }
 
   .infoName {
@@ -1031,7 +1076,7 @@ input[type="radio"]:checked + label span {
 
   .nextText {
     line-height: 38px;
-    font-size: 60px;
+    font-size: 54px;
   }
   .range p {
     font-size: 14px;
@@ -1048,8 +1093,76 @@ input[type="radio"]:checked + label span {
   }
   .feature {
     font-size: 14px;
+    margin-left: 32px;
+  }
+  .Head .headerInfo p {
+    margin: 0 32px;
   }
   .Form p {
     font-size: 7px;
+  }
+  .headerContacts {
+    margin-right: 32px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .infoName h1 {
+    font-size: 20px;
+  }
+  .bnfRow p {
+    font-size: 12px;
+  }
+  .bnfCircle {
+    min-width: 80px;
+    height: 80px;
+  }
+  div h2 {
+    font-size: 20px;
+  }
+
+  .infoName {
+    padding: 30px 0 0 30px;
+  }
+
+  .nextText {
+    line-height: 38px;
+    font-size: 54px;
+  }
+
+  .range {
+    margin-top: 83px;
+  }
+
+  .blockRefs a {
+    font-size: 14px;
+  }
+  .feature {
+    font-size: 14px;
+  }
+  .Form p {
+    font-size: 7px;
+  }
+  /**/
+  .range p {
+    font-size: 12px;
+  }
+  .circle {
+    width: 46px;
+    height: 46px;
+  }
+  .infoName h1 {
+    font-size: 16px;
+  }
+  .nextText {
+    line-height: 38px;
+    font-size: 48px;
+  }
+
+  .Head .headerInfo p {
+    font-size: 16px;
+  }
+  .Head .headerContacts p {
+    font-size: 14px;
   }
 }

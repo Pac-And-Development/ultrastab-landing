@@ -297,8 +297,10 @@
         </div>
       </div>
       <div class="Page">
-        <div class="InfoBenefits ">
+        <div class="InfoBenefits">
+ 
           <h2>Преимущества</h2>
+    
           <div class="benefits">
             <span class="bnfRow">
               <span class="bnfCircle"></span><span class="bnfTire"></span>
@@ -492,9 +494,12 @@
      
       console.log(swip.style.width)
       console.log(window.pageYOffset)
-      if (window.pageYOffset !== 0) {
+      /*if (window.pageYOffset !== 0) {
         setTimeout(() => { window.scrollTo(0, 0)}, 200);
-      };
+      };*/
+           window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
     </script>
   </body>
 </html>
