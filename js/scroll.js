@@ -30,6 +30,8 @@ const helper = {
 };
 class ScrollPages {
   constructor(currentPageNumber, totalPageNumber, pages) {
+    this.pageNumber = document.querySelector(".pageNumber");
+    this.feature = document.querySelector(".feature");
     this.body = document.getElementsByTagName("body")[0];
     this.background = document.querySelector(".background");
     this.rashBtn = document.querySelector(".paymentRequest");
@@ -70,6 +72,28 @@ class ScrollPages {
       }
     }
   }
+  checkPageName(number) {
+    switch (number) {
+      case 1: {
+        return "Применение";
+      }
+      case 2: {
+        return "Преимущества";
+      }
+      case 3: {
+        return "О компании";
+      }
+      case 4: {
+        return "Контакты";
+      }
+      case 5: {
+        return "На главную";
+      }
+      default: {
+        return "Применение";
+      }
+    }
+  }
   checkClassName(name) {
     switch (name) {
       case 1: {
@@ -92,10 +116,13 @@ class ScrollPages {
       }
     }
   }
+
   scrollDown() {
     if (this.currentPageNumber !== this.totalPageNumber) {
       this.pages.style.top = -this.dopeHeights * this.currentPageNumber + "px";
       this.currentPageNumber++;
+      this.pageNumber.innerHTML = "0" + this.currentPageNumber;
+      this.feature.innerHTML = this.checkPageName(this.currentPageNumber);
       this.background.classList.add(
         this.checkBackground(this.currentPageNumber)
       );
@@ -129,6 +156,8 @@ class ScrollPages {
       this.pages.style.top =
         -this.dopeHeights * (this.currentPageNumber - 2) + "px";
       this.currentPageNumber--;
+      this.pageNumber.innerHTML = "0" + this.currentPageNumber;
+      this.feature.innerHTML = this.checkPageName(this.currentPageNumber);
       if (this.currentPageNumber === 1) {
         this.rashBtn.classList.add("closed");
       }
@@ -183,6 +212,7 @@ class ScrollPages {
       });
     });
   }
+
   updateNav() {
     this.navDots.forEach((e) => {
       e.classList.remove("dot-active");
@@ -201,6 +231,7 @@ class ScrollPages {
     let handleResize = helper.debounce(this.resize, 500, this);
     this.pages.style.height = this.viewHeight + "px";
     this.createNav();
+    const feat = document.querySelector(".feature");
 
     if (navigator.userAgent.toLowerCase().indexOf("firefox") === -1) {
       document.addEventListener("wheel", handleMouseWheel);
@@ -223,7 +254,15 @@ class ScrollPages {
     document.addEventListener("touchmove", (event) => {
       event.preventDefault();
     });*/
+    console.log(this.currentPageNumber);
     window.addEventListener("resize", handleResize);
+    feat.addEventListener("click", () => {
+      if (this.currentPageNumber === 5) {
+        this.scrollTo(1);
+      } else {
+        this.scrollTo(this.currentPageNumber + 1);
+      }
+    });
   }
 }
 

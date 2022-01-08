@@ -189,7 +189,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  z-index: 2;
+  z-index: 1;
 }
 
 .iconMouse {
@@ -265,10 +265,114 @@ body {
   color: #242329;
 }
 .arrow {
+  transition: 400ms all;
   margin-left: 20px;
   padding-top: 2px;
 }
 
+#nav-icon4 {
+  display: none;
+  width: 60px;
+  z-index: 4;
+  height: 45px;
+  -webkit-transform: rotate(0deg) scale(0.6);
+  -moz-transform: rotate(0deg) scale(0.6);
+  -o-transform: rotate(0deg) scale(0.6);
+  transform: rotate(0deg) scale(0.6);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #242329;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+/* Icon 4 */
+
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
+}
+.adaptInfo {
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: none;
+}
+
+.adaptInfo p {
+  margin-top: 42px;
+  color: #3243c7;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  transition: 400ms all;
+
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
 /*---------------------- Page----------------- */
 .Page {
   width: 100%;
@@ -357,6 +461,47 @@ div h2 {
   color: #ffffff;
   cursor: pointer;
 }
+
+.menuBlock {
+  position: fixed;
+  background-color: white;
+  transition: 400ms all;
+  width: 0;
+  overflow: hidden;
+  height: 100vh;
+  right: 0;
+  z-index: 3;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menuBlock a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  transition: 400ms all;
+  line-height: 18px;
+  white-space: nowrap;
+  margin: 0 20px;
+  color: #242329;
+  margin-bottom: 4%;
+}
+
+.menuBlock span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menuBlock span svg {
+  display: block;
+}
+#nav-icon4.open ~ .menuBlock {
+  width: 100vw;
+}
+
 .circleF {
   top: -1%;
   left: -0.5%;
@@ -433,8 +578,7 @@ body {
   overflow: hidden;
 }
 /*---------------------- FORM----------------- */
-.Form 
-{
+.Form {
   position: absolute;
   top: 50%;
   right: 0%;
@@ -449,9 +593,7 @@ body {
   padding: 35px 35px;
 }
 
-
-.Form form 
-{
+.Form form {
   width: 100%;
   position: relative;
 }
@@ -587,12 +729,9 @@ body {
   color: white;
 }
 
-.White .Head .headerInfo p .spanRed 
-{
+.White .Head .headerInfo p .spanRed {
   color: #cb3c38;
 }
-
-
 
 .Purple main .Page div div h1 {
   color: white;
@@ -674,7 +813,6 @@ body {
 
 /*--------------------------- PAGE PREIMYSHESTVA ----------------*/
 
-
 .InfoBenefits {
   display: flex;
   margin-left: 5%;
@@ -721,6 +859,11 @@ div h2 {
   margin-right: 4%;
   background: #242329;
 }
+
+.background.five ~ .Foot .arrow {
+  transform: scale(-1, -1);
+}
+
 .bnfRow p {
   font-family: Roboto;
   font-style: normal;
@@ -729,9 +872,21 @@ div h2 {
   line-height: 22px;
   color: #242329;
 }
+.noSlider {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 
+}
+.noSliderInfo {
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
 /*--------------------------- PAGE ABOUT COMPANY ----------------*/
-
 
 .About {
   display: flex;
@@ -1165,4 +1320,409 @@ input[type="radio"]:checked + label span {
   .Head .headerContacts p {
     font-size: 14px;
   }
+}
+
+.pageNumber {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #nav-icon4 {
+    display: flex;
+  }
+  .pageNumber {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    height: 100%;
+    min-width: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3243c7;
+    background-color: white;
+    border-right: 1px solid #c7c7c8;
+  }
+  .iconMouse {
+    display: none;
+  }
+  main {
+    padding-top: 105px;
+    padding-bottom: 90px;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: calc(100% - 140px);
+  }
+  .headerContacts svg {
+    display: none;
+  }
+  .infoName {
+    padding: 0;
+    justify-content: space-between;
+  }
+  .infoName h1 {
+    width: 100%;
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 92px;
+  }
+  .nextText {
+    font-size: 74px;
+    line-height: 82px;
+  }
+  .Form {
+    position: absolute;
+    flex-direction: row;
+    width: 536px;
+    height: 320px;
+    left: 50%;
+    top: 365px;
+    transform: translate(-50%, 0);
+    padding: 27px 46px;
+  }
+  .Form form {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    position: relative;
+    height: inherit;
+  }
+  .inputLabel {
+    width: 45%;
+    margin: 0;
+    height: 45px;
+    margin-right: 5%;
+  }
+
+  .Form h3 {
+    font-size: 20px;
+    line-height: 36px;
+    width: 100%;
+    margin: 0;
+  }
+  .Form form input {
+    width: 200px;
+    height: 35px;
+  }
+  .Page {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .leftMenu {
+    display: none;
+  }
+  .formBtn {
+    width: 46%;
+    margin: 0;
+    margin-right: 4%;
+  }
+  .Form p {
+    font-size: 10px;
+    line-height: 12px;
+
+    margin-right: 7%;
+    width: 40%;
+  }
+  .form-label {
+    font-size: 14px;
+    line-height: 16px;
+    top: 15px;
+  }
+  .range {
+    margin-top: 460px;
+    width: 100%;
+  }
+  .range p {
+    font-size: 20px;
+    line-height: 50px;
+  }
+  .circle {
+    width: 68px;
+    height: 68px;
+  }
+  /*second page*/
+
+  div h2 {
+    font-size: 30px;
+    line-height: 36px;
+    height: min-content;
+    margin-top: 63px;
+    width: 100%;
+  }
+  .Purple main .Page div h2 {
+    margin-top: 63px;
+  }
+  .primPage {
+    margin: 0;
+  }
+  .primPage .infoName p {
+    width: 90%;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+  .navButtons {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 3%;
+  }
+  /*3 page*/
+  .InfoBenefits {
+    margin: 0;
+    flex-direction: column;
+  }
+  .benefits {
+    margin-top: 200px;
+    margin-left: auto;
+  }
+  .bnfCircle {
+    min-height: 90px;
+    min-width: 90px;
+  }
+  .bnfRow p {
+    font-size: 15px;
+    line-height: 22px;
+    width: 300px;
+  }
+  /*4 page*/
+
+  .Red main .Page div h2 {
+    margin-top: 63px;
+  }
+  .About p {
+    width: 85%;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 37px;
+    margin-bottom: 5%;
+  }
+  .aboutInfo p {
+    font-size: 15px;
+    line-height: 22px;
+    width: 37%;
+  }
+  .aboutInfo {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.26);
+    height: 410px;
+    z-index: 1;
+  }
+  .aboutImg {
+    right: 90px;
+  }
+  .companyInfo {
+    top: 92%;
+  }
+  /*5 page*/
+  .Contacts {
+    flex-direction: column;
+  }
+  .contactsBlock {
+    width: 100%;
+    flex-wrap: no-wrap;
+  }
+  .contactsBlock h2 {
+    width: min-content;
+  }
+  .contactIcons {
+    width: 100px;
+  }
+  .mapEl {
+    top: 50%;
+    width: 110%;
+    height: 50%;
+  }
+  .writeBtn {
+    margin-top: 3%;
+  }
+}
+@media screen and (max-width: 320px) {
+  /**/
+
+  main {
+    padding-top: 60px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% - 40px);
+  }
+  .Head {
+    height: 60px;
+  }
+  .logoIcon {
+    min-width: 60px;
+  }
+  .headerInfo p {
+    display: none;
+  }
+  .adaptInfo {
+    display: flex;
+  }
+  .infoName h1 {
+    margin-top: 0;
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .nextText {
+    font-size: 36px;
+    line-height: 42px;
+    /* or 117% */
+  }
+  .range {
+    margin-top: 75px;
+    flex-wrap: wrap;
+  }
+  .range p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+  }
+  .circle p {
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+  }
+  .circleF p {
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .circle {
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .Form {
+    margin-top: 200px;
+    position: absolute;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px 11px;
+    height: 500px;
+  }
+  .Form form {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    position: relative;
+    height: inherit;
+  }
+  .Form h3 {
+    font-size: 20px;
+    line-height: 36px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .inputLabel {
+    width: 100%;
+    margin: 0;
+    height: 45px;
+    margin-bottom: 14px;
+  }
+  .Form form input {
+    width: 228px;
+    height: 32px;
+  }
+  .formBtn {
+    width: 100%;
+    margin: 0;
+  }
+  .Form p {
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 15px;
+    width: 100%;
+  }
+  /*2*/
+
+  .primPage .infoName p {
+    line-height: 20px;
+  }
+  .navButtons {
+    display: none;
+  }
+  .swiper {
+    display: none;
+  }
+  .noSlider {
+    display: flex;
+
+  }
+  .noSliderInfo {
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .circleSecond {
+    min-width: 76px;
+    min-height: 76px;
+    margin-right: 14px;
+  }
+  .noSliderInfo p {
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+  }
+  .noSlider p{
+    margin-top: 0;
+width: 100%;
+  }
+
+  /*3*/
+  .benefits {
+    margin-top: 30px;
+    margin-left: 0;
+}
+.bnfTire {
+  display: none;
+}
+.bnfRow {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 38px;
+}
+
+/*4*/
+
+.aboutInfo {
+ width: 100%;
+ height: 620px;
+ padding: 0;
+}
+.aboutImg {
+ width: 100%;
+top: 80%;
+right: 0%;
+  transform: translate(0%, -50%);
+}
+.aboutInfo p {
+  font-size: 15px;
+line-height: 20px;
+width: 100%;
+padding: 0;
+}
+.companyInfo {
+  top: 90%;
+right: 0%;
+  transform: translate(0%, -50%);
+}
+.paymentRequest {
+  margin-left: 0;
+}
 }
