@@ -191,6 +191,7 @@ body {
   align-items: center;
   z-index: 2;
 }
+
 .iconMouse {
   height: 100%;
   position: relative;
@@ -274,7 +275,6 @@ body {
   height: 85vh;
   transition: 700ms all;
   margin: 0;
-
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -301,7 +301,7 @@ main {
   width: 100%;
   position: relative;
 }
-.infoName h1 {
+.infoName h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -390,7 +390,6 @@ main {
     cy: 26;
   }
 }
-
 .background {
   width: 100vw;
   transition: 400ms all;
@@ -425,7 +424,8 @@ body {
   overflow: hidden;
 }
 /*---------------------- FORM----------------- */
-.Form {
+.Form 
+{
   position: absolute;
   top: 50%;
   right: 0%;
@@ -439,7 +439,10 @@ body {
   justify-content: flex-start;
   padding: 35px 35px;
 }
-.Form form {
+
+
+.Form form 
+{
   width: 100%;
   position: relative;
 }
@@ -575,11 +578,13 @@ body {
   color: white;
 }
 
-.White .Head .headerInfo p .spanRed {
+.White .Head .headerInfo p .spanRed 
+{
   color: #cb3c38;
 }
 
-.Purple main .Page .primPage .infoName h1 {
+.Purple main .Page .primPage .infoName h1 
+{
   color: white;
   margin: 0;
   margin-bottom: 30px;
@@ -645,6 +650,8 @@ body {
 }
 
 /*--------------------------- PAGE PREIMYSHESTVA ----------------*/
+
+
 .InfoBenefits {
   display: flex;
   margin-left: 5%;
@@ -653,7 +660,7 @@ body {
   justify-content: space-between;
   padding: 0;
 }
-.InfoBenefits h2 {
+.infoName h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -702,6 +709,7 @@ body {
 
 /*--------------------------- PAGE ABOUT COMPANY ----------------*/
 
+
 .About {
   display: flex;
   flex-direction: column;
@@ -711,7 +719,7 @@ body {
   justify-content: flex-start;
   padding: 0;
 }
-.About h2 {
+.infoName h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -776,7 +784,9 @@ body {
   margin-right: 10%;
   background: #ffffff;
 }
+
 /*--------------------------- PAGE CONTACTS ----------------*/
+
 .Contacts {
   display: flex;
   flex-direction: row;
@@ -785,7 +795,6 @@ body {
   width: 100%;
   justify-content: flex-start;
   padding: 0;
-
   z-index: 2;
 }
 .contactsBlock {
@@ -805,7 +814,7 @@ body {
   border-right: 1px solid #c7c7c8;
   z-index: -1;
 }
-.contactsBlock h2 {
+.infoName h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
