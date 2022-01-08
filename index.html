@@ -170,7 +170,7 @@
       <div class="Page">
         <div class="primPage">
           <div style="padding: 0; justify-content: flex-start" class="infoName">
-            <h1>Применение</h1>
+            <h2>Применение</h2>
             <p>
               Компания УльтраСтаб предлагает к продаже нити из полиэфира с
               требуемыми свойствами, которые уже давно заняли лидирующие позиции
@@ -298,7 +298,9 @@
       </div>
       <div class="Page">
         <div class="InfoBenefits">
+ 
           <h2>Преимущества</h2>
+    
           <div class="benefits">
             <span class="bnfRow">
               <span class="bnfCircle"></span><span class="bnfTire"></span>
@@ -492,9 +494,12 @@
      
       console.log(swip.style.width)
       console.log(window.pageYOffset)
-      if (window.pageYOffset !== 0) {
+      /*if (window.pageYOffset !== 0) {
         setTimeout(() => { window.scrollTo(0, 0)}, 200);
-      };
+      };*/
+           window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
     </script>
   </body>
 </html>
