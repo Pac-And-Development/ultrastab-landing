@@ -31,7 +31,12 @@ const helper = {
 class ScrollPages {
   constructor(currentPageNumber, totalPageNumber, pages) {
     this.pageNumber = document.querySelector(".pageNumber");
+    this.blockRefs = Array.prototype.slice
+      .call(document.querySelector(".blockRefs").childNodes)
+      .filter((el) => el.tagName === "A");
+    console.log(this.blockRefs);
     this.feature = document.querySelector(".feature");
+    this.lineLeftBlock = document.querySelector(".lineLeftBlock");
     this.body = document.getElementsByTagName("body")[0];
     this.background = document.querySelector(".background");
     this.rashBtn = document.querySelector(".paymentRequest");
@@ -129,6 +134,12 @@ class ScrollPages {
       if (this.background.classList.length >= 2) {
         this.background.classList.remove(this.background.classList[1]);
       }
+      this.lineLeftBlock.style.opacity = 1;
+      this.lineLeftBlock.style.top =
+        this.blockRefs[this.currentPageNumber - 2].getBoundingClientRect().y +
+        "px";
+      this.lineLeftBlock.style.height =
+        this.blockRefs[this.currentPageNumber - 2].offsetWidth + "px";
       for (let i = 1; i <= this.slidePages.length; i++) {
         if (i !== this.currentPageNumber) {
           this.slidePages[i - 1].style.opacity = 0;
@@ -160,6 +171,16 @@ class ScrollPages {
       this.feature.innerHTML = this.checkPageName(this.currentPageNumber);
       if (this.currentPageNumber === 1) {
         this.rashBtn.classList.add("closed");
+      }
+      if (this.currentPageNumber === 1) {
+        this.lineLeftBlock.style.opacity = 0;
+      } else {
+        this.lineLeftBlock.style.opacity = 1;
+        this.lineLeftBlock.style.top =
+          this.blockRefs[this.currentPageNumber - 2].getBoundingClientRect().y +
+          "px";
+        this.lineLeftBlock.style.height =
+          this.blockRefs[this.currentPageNumber - 2].offsetWidth + "px";
       }
       for (let i = 1; i <= this.slidePages.length; i++) {
         if (i !== this.currentPageNumber) {
@@ -231,6 +252,15 @@ class ScrollPages {
     let handleResize = helper.debounce(this.resize, 500, this);
     this.pages.style.height = this.viewHeight + "px";
     this.createNav();
+    for (let i = 1; i <= this.slidePages.length; i++) {
+      if (i !== this.currentPageNumber) {
+        this.slidePages[i - 1].style.opacity = 0;
+        this.slidePages[i - 1].style.transform = "scale(0.8)";
+      } else {
+        this.slidePages[i - 1].style.opacity = 1;
+        this.slidePages[i - 1].style.transform = "scale(1)";
+      }
+    }
     const feat = document.querySelector(".feature");
 
     if (navigator.userAgent.toLowerCase().indexOf("firefox") === -1) {
