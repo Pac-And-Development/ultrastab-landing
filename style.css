@@ -384,6 +384,7 @@ body {
   flex-direction: row;
   position: relative;
   height: 1024px;
+
 }
 
 main {
@@ -396,6 +397,7 @@ main {
   z-index: 1;
   width: calc(100% - 10vh);
   min-height: max-content;
+  overflow-x: hidden;
 }
 .infoName {
   padding-left: 108px;
