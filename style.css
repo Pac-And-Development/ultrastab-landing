@@ -383,6 +383,7 @@ body {
   display: flex;
   flex-direction: row;
   position: relative;
+  height: 1024px;
 }
 
 main {
@@ -394,6 +395,7 @@ main {
   padding-left: 10vh;
   z-index: 1;
   width: calc(100% - 10vh);
+  min-height: max-content;
 }
 .infoName {
   padding-left: 108px;
@@ -1354,6 +1356,7 @@ input[type="radio"]:checked + label span {
     padding-left: 70px;
     padding-right: 70px;
     width: calc(100% - 140px);
+  
   }
   .headerContacts svg {
     display: none;
@@ -1378,7 +1381,7 @@ input[type="radio"]:checked + label span {
     width: 536px;
     height: 320px;
     left: 50%;
-    top: 365px;
+    top: 345px;
     transform: translate(-50%, 0);
     padding: 27px 46px;
   }
@@ -1410,6 +1413,7 @@ input[type="radio"]:checked + label span {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+  
   }
   .leftMenu {
     display: none;
@@ -1432,7 +1436,7 @@ input[type="radio"]:checked + label span {
     top: 15px;
   }
   .range {
-    margin-top: 460px;
+    margin-top: 430px;
     width: 100%;
   }
   .range p {
@@ -1475,7 +1479,7 @@ input[type="radio"]:checked + label span {
     flex-direction: column;
   }
   .benefits {
-    margin-top: 200px;
+    margin-top: 80px;
     margin-left: auto;
   }
   .bnfCircle {
@@ -1499,6 +1503,9 @@ input[type="radio"]:checked + label span {
     line-height: 24px;
     margin-top: 37px;
     margin-bottom: 5%;
+  }
+  .About {
+    margin-top: 0;
   }
   .aboutInfo p {
     font-size: 15px;
@@ -1532,15 +1539,16 @@ input[type="radio"]:checked + label span {
     width: 100px;
   }
   .mapEl {
-    top: 50%;
-    width: 110%;
-    height: 50%;
+    top: 42.7%;
+    width: 98%;
+    height: 40%;
   }
   .writeBtn {
-    margin-top: 3%;
+    margin-top: -48%;
+   margin-left: 63%;
   }
 }
-@media screen and (max-width: 735px) {
+@media screen and (max-width: 736px) {
 main {
   padding-left: 40px;
   padding-right: 40px;
@@ -1554,10 +1562,38 @@ main {
   white-space: nowrap;
 }
 .aboutInfo {
-  height: 430px;
+  height: 408px;
+}
+.formBtn {
+  width: 45%;
+  margin: 0;
+  margin-right: 6%;
+}
+.aboutInfo p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-top: revert;
+  width: 37%;
+}
+.companyInfo {
+  top: 89%;
+}
+.writeBtn {
+  margin-top: -46%;
+  margin-left: 66%;
+}
+.mapEl {
+  top: 42.7%;
+  width: 93.7%;
+  height: 40%;
 }
 }
-@media screen and (max-width: 650px) { 
+@media screen and (max-width: 667px) { 
+
+
+
+}
+@media screen and (max-width: 640px) { 
 .headerInfo p {
   display: none;
 }
@@ -1570,8 +1606,32 @@ main {
 .aboutInfo {
   height: 500px;
 }
+.Page {
+  overflow: visible;
 }
+}
+@media screen and (max-width: 568px) { 
 
+
+
+}
+@media screen and (max-width: 480px) { 
+
+
+
+
+}
+@media screen and (max-width: 375px) {
+  main {
+    padding: 0;
+  }
+  footer {
+    display: none;
+  }
+
+
+
+}
 @media screen and (max-width: 320px) {
   /**/
 

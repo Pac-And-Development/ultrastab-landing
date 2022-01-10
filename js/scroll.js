@@ -266,7 +266,9 @@ class ScrollPages {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  var s = new ScrollPages(1, 5, document.getElementById("all-pages"));
-  s.init();
-});
+if (document.documentElement.clientWidth > 640) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var s = new ScrollPages(1, 5, document.getElementById("all-pages"));
+    s.init();
+  });
+}
