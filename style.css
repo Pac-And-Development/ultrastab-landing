@@ -2167,6 +2167,56 @@ height: 42%;}
 
 }
 @media screen and (max-width: 375px) {
+  .nextText {
+    font-size: 49px;
+    line-height: 56px;
+}
+.Form {
+  margin-top: 60px;
+  position: absolute;
+  width: 91%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 30px 44px;
+  height: 485px;
+}
+.circle {
+  margin-right: 30px;
+  margin-left: 0;
+  margin-top: 9px;
+}
+.Page:nth-child(4) h2 {
+  margin-top: 52px;
+  color: white;
+}
+.aboutInfo {
+  padding: 1px 0px;
+  border-top: none;
+  background: transparent;
+}
+.aboutInfo p {
+  font-size: 15px;
+  line-height: 21px;
+  margin-top: 19px;
+  width: 91%;
+  /* margin: 0; */
+}
+.aboutImg {
+  right: 39px;
+  width: 305px;
+  height: 217px;
+  top: 323px;
+}
+.companyInfo {
+  top: 112%;
+  left: 10%;
+}
+.writeBtn {
+  margin-top: -105%;
+  margin-left: 44%;
+}
   main {
     padding: 0;
   }
