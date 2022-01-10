@@ -1999,12 +1999,124 @@ width: 101%;
 height: 42%;}
 }
 @media screen and (max-width: 430px) {
+
   main {
     padding: 0;
+    margin: 0 !important;
+    width: 100%;
   }
+  .adaptInfo {
+    display: flex;
+    margin-top: 99px;
+    margin-left: 35px;
+}
+.infoName {
+  padding: 0;
+  justify-content: space-between;
+  margin-left: 35px;
+  
+}
+.Form {
+  margin-top: 60px;
+  position: absolute;
+  width: 79%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 30px 44px;
+  height: 485px;
+}
+.formBtn {
+  width: 100%;
+  margin: 0;
+  /* margin-right: 6%; */
+}
+.Form p {
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 3%;
+  width: 100%;
+}
+.circle {
+  min-width: 70px;
+  min-height: 70px;
+}
+.range {
+  margin-top: 589px;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+}
+.circle {
+ margin-right: 30px;
+ margin-left: 0;
+}
+.circle:nth-child(2) {
+  margin-left: 30px !important;
+}
+.Page:nth-child(1) {
+  height: 1350px;
+}
+.Page:nth-child(2) h2 {
+  margin-top: 0px;
+}
+.Page:nth-child(2) {
+  height: 1093px;
+}
   footer {
     display: none;
   }
+  .InfoBenefits {
+    margin-left: 35px;
+    flex-direction: column;
+}
+.About {
+  margin-left: 35px;
+}
+.Page:nth-child(4) h2 {
+  margin-top: 95px;
+  color: white;
+}
+.aboutInfo p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-top: 82px;
+  width: 85%;
+}
+.aboutInfo {
+  padding: 1px 1px;
+  border-top: none;
+  background: transparent;
+}
+.aboutImg {
+  right: 45px;
+  width: 325px;
+  height: 217px;
+  top: 345px;
+}
+.companyInfo {
+  top: 118%;
+  left: 17%;
+}
+.Contacts {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-top: 3%;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0;
+  z-index: 2;
+}
+.writeBtn {
+  margin-top: -88%;
+  margin-left: 47%;
+}
+.Page:nth-child(5) {
+  width: 100vw;
+}
 }
 @media screen and (max-width: 375px) {
   main {
