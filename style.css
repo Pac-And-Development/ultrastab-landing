@@ -2118,6 +2118,14 @@ height: 42%;}
   width: 100vw;
 }
 }
+@media screen and (max-width: 414px) { 
+  .nextText {
+    font-size: 54px;
+    line-height: 58px;
+}
+
+
+}
 @media screen and (max-width: 375px) {
   main {
     padding: 0;
