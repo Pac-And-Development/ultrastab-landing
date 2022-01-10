@@ -266,7 +266,7 @@ class ScrollPages {
   }
 }
 
-if (document.documentElement.clientWidth > 640) {
+if (document.documentElement.clientWidth > 960) {
   document.addEventListener("DOMContentLoaded", function () {
     var s = new ScrollPages(1, 5, document.getElementById("all-pages"));
     s.init();
