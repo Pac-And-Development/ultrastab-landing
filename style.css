@@ -1691,6 +1691,9 @@ input[type="radio"]:checked + label span {
   .logoIcon {
     min-width: 60px;
   }
+  .Page  {
+   height: 1000px;
+  }
   .Page:nth-child(2) h2 {
     color: white;
     margin-top: 15px;
@@ -1699,8 +1702,8 @@ input[type="radio"]:checked + label span {
     width: 94vw !important;
   }
   .Page:nth-child(3) h2 {
-    margin-top: 70px;
-  }
+    margin-top: 120px;
+}
   .benefits {
     margin-top: 80px;
     margin-left: 23%;
@@ -1723,9 +1726,9 @@ input[type="radio"]:checked + label span {
     margin-top: 15px;
   }
   .writeBtn {
-    margin-top: -46%;
+    margin-top: -54%;
     margin-left: 61%;
-  }
+}
   .Form {
     padding: 27px 12px;
   }
@@ -2204,6 +2207,9 @@ input[type="radio"]:checked + label span {
     margin-top: -97%;
     margin-left: 47%;
   }
+  .Page:nth-child(5) {
+    height: 1300px !important;
+}
 }
 @media screen and (max-width: 375px) {
   .nextText {
