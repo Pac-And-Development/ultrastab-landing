@@ -2123,7 +2123,47 @@ height: 42%;}
     font-size: 54px;
     line-height: 58px;
 }
-
+.Form {
+  margin-top: 60px;
+  position: absolute;
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 30px 44px;
+  height: 485px;
+}
+.aboutInfo p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-top: 25px;
+  width: 89%;
+}
+.aboutImg {
+  right: 39px;
+  width: 325px;
+  height: 217px;
+  top: 298px;
+}
+.companyInfo {
+  top: 112%;
+  left: 14%;
+}
+.infoCont p {
+  width: 95%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  color: #242329;
+  margin: 0;
+}
+.writeBtn {
+  margin-top: -97%;
+  margin-left: 47%;
+}
 
 }
 @media screen and (max-width: 375px) {
