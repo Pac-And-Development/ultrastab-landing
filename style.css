@@ -1900,11 +1900,11 @@ input[type="radio"]:checked + label span {
 }
 @media screen and (max-width: 480px) {
   .background {
-    background-image: url(./images/4800.png);
+    background-image: url(./images/aa1.png);
     background-repeat: no-repeat;
     background-size: contain;
     top: 0;
-    height: 6107px;
+    height: 4642px;
     left: 0;
 
     position: absolute;
@@ -2045,7 +2045,7 @@ input[type="radio"]:checked + label span {
     display: none;
   }
   .Page:nth-child(3) {
-    height: 1200px;
+    height: 1090px;
   }
   .bnfRow {
     flex-direction: column;
@@ -2059,11 +2059,11 @@ input[type="radio"]:checked + label span {
     text-align: left;
   }
   .Page:nth-child(4) h2 {
-    margin-top: 151px;
+    margin-top: 65px;
     color: white;
   }
   .Page:nth-child(4) {
-    height: 1300px !important;
+    height: 1220px !important;
   }
   .About {
     margin: 0;
@@ -2073,16 +2073,19 @@ input[type="radio"]:checked + label span {
     border-top: none;
     background: transparent;
   }
+  .aboutInfo {
+    height: 457px;
+}
   .aboutImg {
     right: 110px;
     width: 325px;
     height: 217px;
-    top: 357px;
+    top: 323px;
   }
   .aboutInfo p {
     font-size: 15px;
     line-height: 22px;
-    margin-top: 109px;
+    margin-top: 75px;
     width: 91%;
   }
   .Contacts {
@@ -2126,12 +2129,12 @@ input[type="radio"]:checked + label span {
     white-space: nowrap;
   }
   .writeBtn {
-    margin-top: -83%;
+    margin-top: -85%;
     margin-left: 50%;
   }
   .mapEl {
-    top: 46.7%;
-    width: 101%;
+    top: 61%;
+    width: 95%;
     height: 42%;
   }
 }
