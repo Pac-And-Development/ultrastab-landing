@@ -430,7 +430,9 @@ main {
   z-index: 1;
   width: calc(100% - 10vh);
   min-height: max-content;
+  overflow-x: hidden;
 }
+
 .infoName {
   padding-left: 108px;
 
@@ -1909,6 +1911,9 @@ input[type="radio"]:checked + label span {
 
     position: absolute;
   }
+  .noSliderCont {
+    width: 100%;
+  }
   .nextText {
     font-size: 59px;
     line-height: 66px;
@@ -2366,6 +2371,10 @@ input[type="radio"]:checked + label span {
     height: 4640px;
  
   }
+  
+  .noSliderCont:last-child {
+    display: none;
+  }
   .nextText {
     font-size: 49px;
     line-height: 56px;
@@ -2456,6 +2465,12 @@ input[type="radio"]:checked + label span {
 }
 }
 @media screen and (max-width: 320px) {
+  .circle:nth-child(4) {
+    margin-right: 15px;
+}
+.circle:nth-child(5) {
+  margin-right: 15px;
+}
   /**/
   .background {
     background-image: url(./images/aaaa320.png);
@@ -2483,6 +2498,12 @@ input[type="radio"]:checked + label span {
   .headerInfo p {
     display: none;
   }
+  .Page:nth-child(5) h2 {
+    margin-top: 10px;
+}
+.Page:nth-child(4) {
+  height: 1300px !important;
+}
   .adaptInfo {
     display: flex;
     margin-top: 63px;
@@ -2512,7 +2533,12 @@ input[type="radio"]:checked + label span {
     font-size: 16px;
     line-height: 20px;
     width: 100%;
+    margin-bottom: 5%;
+
   }
+  .Page:nth-child(2) h2 {
+    margin-top: 0px;
+}
   .circle p {
     font-size: 11px;
     line-height: 13px;
@@ -2598,6 +2624,7 @@ input[type="radio"]:checked + label span {
   }
   .noSlider {
     display: flex;
+    margin-bottom: 30px;
   }
   .noSliderInfo {
     display: flex;
@@ -2691,10 +2718,13 @@ input[type="radio"]:checked + label span {
     margin-left: 0%;
   }
   .mapEl {
-    top: 46.7%;
-    width: 99%;
-    height: 46%;
+    top: 44.7%;
+    width: 93%;
+    height: 60%;
     left: 0%;
+  }
+  .Page:nth-child(5) {
+    height: 1080px;
   }
   .check {
     margin-top: 22%;
