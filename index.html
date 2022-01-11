@@ -26,7 +26,7 @@
         <span class="spanRed">S </span>T A B
       </p>
       <span class="headerContacts">
-        <p>8 (499) 112 48 37</p>
+        <p><a href="tel:+74991124837">8 (499) 112 48 37</a></p>
         <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M25.8065 1.07605C25.4822 0.823834 24.235 0.836936 22.9984 0.840211C21.7334 0.846762 20.479 0.853313 20.1904 0.958129C19.9231 1.05639 19.3173 2.39607 18.5333 3.77505C17.646 5.33746 16.5449 6.83763 15.8536 6.82781C14.9556 6.8147 15.1622 4.24999 15.2157 2.36659C15.2513 1.11863 15.0304 0.728844 14.8308 0.604376C14.3498 0.309582 13.0455 0.0180634 13.0455 0.0180634C13.0455 0.0180634 9.13276 -0.253802 8.57329 1.31188C9.31807 1.40032 10.6009 1.18414 10.1056 6.00566C10.0807 6.23822 9.50693 8.22644 7.67884 5.53726C7.22628 4.87234 5.47302 0.856589 4.87079 0.840211C2.84314 0.791079 0.858257 0.712467 0.149116 1.07605C-0.499446 1.40687 1.02574 4.18121 3.59504 7.88579C5.69752 10.9123 7.92473 13.2772 11.7662 13.8734C12.4825 13.9389 14.3747 14.0175 14.9591 13.7555C15.3654 13.572 14.87 10.9484 16.2349 10.7027C16.8478 10.5946 19.1783 13.4279 20.0657 13.7555C20.6038 13.952 21.7868 14.0273 23.002 13.9913C24.3134 13.952 25.7958 14.0961 25.9383 13.2871C26.2591 11.4757 21.9828 9.12392 21.8545 8.00371C21.7619 7.20121 23.4189 5.72397 24.2813 4.60047C25.3254 3.23132 26.4622 1.58375 25.8065 1.07605Z"
@@ -231,26 +231,8 @@
               </span>
               <p>Для производства<br />технических тканей, силовых<br />лент, канатов, строп,<br />геосеток</p>
             </div>
-            <div class="noSlider">
-              <span class="noSliderInfo">
-                <div class="circleSecond">
-                  <p>HM</p>
-                </div>
-                <p>Высоко<br>модульные</p>
-
-              </span>
-              <p>Для производства<br />технических тканей, силовых<br />лент, канатов, строп,<br />геосеток</p>
-            </div>
-            <div class="noSlider">
-              <span class="noSliderInfo">
-                <div class="circleSecond">
-                  <p>HM</p>
-                </div>
-                <p>Высоко<br>модульные</p>
-
-              </span>
-              <p>Для производства<br />технических тканей, силовых<br />лент, канатов, строп,<br />геосеток</p>
-            </div>
+           
+            
           </div>
           <div class="swiper mySwiper">
             <!-- Additional required wrapper -->
@@ -469,8 +451,14 @@
     </div>
     <div class="Page">
       <div class="mapEl">
-        <script type="text/javascript" charset="utf-8" async
-          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A561ea4ca90d6f2dd40739c00485af9d316d2208d21fb03987ad712ad04441044&amp;lang=ru_RU&amp;scroll=true"></script>
+        <div>
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6f199ae1efd184eadec0241ebf148508ecadb5b985fcf81cf36ab6570e4d1a70&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div>
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e7d83708d518c52f842f2368d3be88cacc13f1dcfe95fb723fcd25e0e723b73&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
       </div>
       <div class="Contacts">
         <div class="contactsBlock">
@@ -501,11 +489,12 @@
           </span>
           <div class="check">
             <div class="contactLine"></div>
-            <div style="margin-right: 5%;"> <input id="option-one" name="radio" value="one" checked="checked"
-                type="radio">
+            <div class="typecard" style="margin-right: 5%;"> <input id="option-one" name="radio" value="one"
+                checked="checked" type="radio">
               <label for="option-one"> <span></span> ФАБРИКА УЛЬТРАСТАБ </label>
             </div>
-            <div> <input id="option-two" name="radio" value="two" type="radio"> <label for="option-two"> <span></span>
+            <div class="typecard"> <input id="option-two" name="radio" value="two" type="radio"> <label
+                for="option-two"> <span></span>
                 ТОРГОВЫЙ ДОМ УЛЬТРАСТАБ </label> </div>
           </div>
           <div class="infoCont">
@@ -553,11 +542,7 @@
     });
     const swip = document.querySelector('.swiper')
     const page = document.querySelector('.Page')
-    console.log(page.clientWidth)
 
-
-    console.log(swip.style.width)
-    console.log(window.pageYOffset)
     /*if (window.pageYOffset !== 0) {
       setTimeout(() => { window.scrollTo(0, 0)}, 200);
     };*/

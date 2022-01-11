@@ -53,6 +53,11 @@ body {
   color: black;
 }
 
+.Head .headerInfo .headerContacts p a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .White .Head .headerInfo p {
   color: #3243c7;
 }
@@ -141,6 +146,7 @@ body {
 
 .Purple .leftMenu .blockRefs a {
   color: white;
+
   position: relative;
 }
 
@@ -160,6 +166,17 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 2;
+}
+.mapEl div {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.leftMenu a {
+  cursor: pointer;
 }
 .blockRefs a {
   font-family: "Roboto", sans-serif;
@@ -1647,12 +1664,15 @@ input[type="radio"]:checked + label span {
 @media screen and (max-width: 667px) {
 }
 @media screen and (max-width: 640px) {
+  main {
+    padding-bottom: 0;
+  }
   .background {
-    background-image: url(./images/Gro.png);
+    background-image: url(./images/640.png);
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
-    height: 5120px;
+    height: 3843px;
     left: 0;
 
     position: absolute;
@@ -1675,6 +1695,7 @@ input[type="radio"]:checked + label span {
   .Page {
     overflow-x: hidden;
     overflow-y: scroll;
+    width: 100%;
   }
   main {
     position: relative;
@@ -1691,25 +1712,45 @@ input[type="radio"]:checked + label span {
   .logoIcon {
     min-width: 60px;
   }
-  .Page  {
-   height: 1000px;
+  .Page:nth-child(1) {
+    height: 950px;
   }
+  .Page:nth-child(2) {
+    height: 860px;
+  }
+  .Page:nth-child(3) {
+    height: 950px;
+  }
+  .Page:nth-child(4) {
+    width: 94vw !important;
+    height: 960px;
+  }
+  .Page:nth-child(5) {
+  
+    height: 800px;
+  }
+
+
+
   .Page:nth-child(2) h2 {
     color: white;
-    margin-top: 15px;
+    margin-top: 65px;
   }
   .Page:nth-child(2) {
     width: 94vw !important;
   }
   .Page:nth-child(3) h2 {
-    margin-top: 120px;
-}
+    margin-top: 83px;
+  }
   .benefits {
-    margin-top: 80px;
+    margin-top: 48px;
     margin-left: 23%;
   }
+  .bnfRow {
+    margin-bottom: 14%;
+  }
   .Page:nth-child(4) h2 {
-    margin-top: 15px;
+    margin-top: 65px;
     color: white;
   }
   .aboutImg {
@@ -1723,12 +1764,12 @@ input[type="radio"]:checked + label span {
     top: 93%;
   }
   .Page:nth-child(5) h2 {
-    margin-top: 15px;
+    margin-top: 95px;
   }
   .writeBtn {
     margin-top: -54%;
     margin-left: 61%;
-}
+  }
   .Form {
     padding: 27px 12px;
   }
@@ -1742,20 +1783,58 @@ input[type="radio"]:checked + label span {
     align-items: center;
     align-content: space-between;
   }
+  .mapEl {
+    top: 55.7%;
+    width: 94.7%;
+    height: 44%;
+  }
 }
 @media screen and (max-width: 568px) {
+
+.background {
+  background-image: url(./images/568.png);
+}
+  .Page:nth-child(1) {
+    height: 950px;
+  
+  }
+  .Page:nth-child(2) {
+    height: 860px;
+  }
+  .Page:nth-child(3) {
+    height: 950px;
+  }
+  .Page:nth-child(4) {
+    width: 94vw !important;
+    height: 980px;
+  }
+  .Page:nth-child(5) {
+  
+    height: 800px;
+  }
+
   .Form {
     margin-top: 56px;
     position: absolute;
-    width: 94%;
+    width: 92%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 30px 11px;
+    padding: 21px 19px;
     height: 307px;
-  }
-
+}
+.Page:nth-child(3) h2 {
+  margin-top: 30px;
+}
+.Page:nth-child(4) h2 {
+  margin-top: -3px;
+  color: white;
+}
+  .Page:nth-child(2) h2 {
+    color: white;
+    margin-top: 88px;
+}
   .Form h3 {
     font-size: 20px;
     line-height: 36px;
@@ -1767,14 +1846,21 @@ input[type="radio"]:checked + label span {
     height: 35px;
   }
   .range {
-    margin-top: 410px;
+    margin-top: 413px;
     width: 100%;
     flex-wrap: wrap;
     display: flex;
   }
+  .range p {
+    width: 100%;
+    margin: 0;
+  }
   .circle {
     min-width: 66px;
     min-height: 66px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 10px;
   }
   .benefits {
     margin-top: 80px;
@@ -1783,10 +1869,7 @@ input[type="radio"]:checked + label span {
   .Page:nth-child(4) {
     width: 93vw !important;
   }
-  .Page:nth-child(4) h2 {
-    margin-top: -7px;
-    color: white;
-  }
+
   .aboutImg {
     width: 264px;
     height: 247px;
@@ -1802,16 +1885,24 @@ input[type="radio"]:checked + label span {
     width: 93vw;
   }
   .mapEl {
-    top: 45.7%;
-    width: 98.7%;
-    height: 40%;
+    top: 46.7%;
+    width: 94.7%;
+    height: 53%;
   }
+  .Page:nth-child(5) h2 {
+    margin-top: 53px;
+}
+.navButtons {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 12%;
+}
 }
 @media screen and (max-width: 480px) {
   .background {
-    background-image: url(./images/aa.png);
+    background-image: url(./images/4800.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     top: 0;
     height: 6107px;
     left: 0;
@@ -1831,14 +1922,14 @@ input[type="radio"]:checked + label span {
   .Form {
     margin-top: -35px;
     position: absolute;
-    width: 94%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 30px 11px;
+    padding: 30px 34px;
     height: 490px;
-  }
+}
   .Form p {
     font-size: 10px;
     line-height: 12px;
@@ -1846,7 +1937,7 @@ input[type="radio"]:checked + label span {
     width: 93%;
   }
   .range {
-    margin-top: 576px;
+    margin-top: 600px;
     width: 100%;
     flex-wrap: wrap;
     display: flex;
@@ -1930,7 +2021,8 @@ input[type="radio"]:checked + label span {
     height: 1120px;
   }
   .Page:nth-child(2) {
-    height: 1202px;
+    height: 1110px;
+    overflow: hidden;
   }
   .infoName {
     padding: 0;
@@ -1940,10 +2032,10 @@ input[type="radio"]:checked + label span {
     margin-top: 45px;
   }
   .Page:nth-child(3) h2 {
-    margin-top: 93px;
+    margin-top: 155px;
   }
   .noSliderCont {
-    overflow-y: scroll;
+    overflow-y: hidden;
   }
   .benefits {
     margin-top: 10px;
@@ -2209,7 +2301,7 @@ input[type="radio"]:checked + label span {
   }
   .Page:nth-child(5) {
     height: 1300px !important;
-}
+  }
 }
 @media screen and (max-width: 375px) {
   .nextText {
@@ -2258,6 +2350,11 @@ input[type="radio"]:checked + label span {
     top: 112%;
     left: 10%;
   }
+
+  a {
+    color: inherit;
+  }
+
   .writeBtn {
     margin-top: -105%;
     margin-left: 44%;

@@ -34,7 +34,6 @@ class ScrollPages {
     this.blockRefs = Array.prototype.slice
       .call(document.querySelector(".blockRefs").childNodes)
       .filter((el) => el.tagName === "A");
-    console.log(this.blockRefs);
     this.feature = document.querySelector(".feature");
     this.lineLeftBlock = document.querySelector(".lineLeftBlock");
     this.body = document.getElementsByTagName("body")[0];
@@ -284,7 +283,11 @@ class ScrollPages {
     document.addEventListener("touchmove", (event) => {
       event.preventDefault();
     });*/
-    console.log(this.currentPageNumber);
+    this.blockRefs.map((el, i) =>
+      el.addEventListener("click", () => {
+        this.scrollTo(i + 2);
+      })
+    );
     window.addEventListener("resize", handleResize);
     feat.addEventListener("click", () => {
       if (this.currentPageNumber === 5) {
