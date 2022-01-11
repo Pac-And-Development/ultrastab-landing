@@ -2139,11 +2139,21 @@ input[type="radio"]:checked + label span {
   }
 }
 @media screen and (max-width: 430px) {
+  .background {
+    background-image: url(./images/4300.png);
+  
+    height: 4640px;
+ 
+  }
   main {
     padding: 0;
     margin: 0 !important;
     width: 100%;
   }
+  .nextText {
+    font-size: 56px;
+    line-height: 66px;
+}
   .adaptInfo {
     display: flex;
     margin-top: 99px;
@@ -2188,21 +2198,22 @@ input[type="radio"]:checked + label span {
     justify-content: flex-start;
   }
   .circle {
-    margin-right: 30px;
+    margin-right: 10px;
     margin-left: 0;
   }
-  .circle:nth-child(2) {
-    margin-left: 30px !important;
-  }
+ 
   .Page:nth-child(1) {
-    height: 1350px;
+    height: 1150px;
   }
   .Page:nth-child(2) h2 {
-    margin-top: 0px;
+    margin-top: 100px;
   }
   .Page:nth-child(2) {
-    height: 1093px;
+    height: 1235px;
   }
+  .Page:nth-child(3) {
+    height: 1070px;
+}
   footer {
     display: none;
   }
@@ -2214,9 +2225,12 @@ input[type="radio"]:checked + label span {
     margin-left: 35px;
   }
   .Page:nth-child(4) h2 {
-    margin-top: 95px;
+    margin-top: 22px;
     color: white;
   }
+  .Page:nth-child(3) h2 {
+    margin-top: 100px;
+}
   .aboutInfo p {
     font-size: 15px;
     line-height: 22px;
@@ -2232,17 +2246,20 @@ input[type="radio"]:checked + label span {
     right: 45px;
     width: 325px;
     height: 217px;
-    top: 345px;
+    top: 356px;
   }
   .companyInfo {
-    top: 118%;
-    left: 17%;
+    top: 132%;
+    left: 15%;
   }
+  .Page:nth-child(4) {
+    height: 1200px !important;
+}
   .Contacts {
     display: flex;
     flex-direction: row;
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 12%;
     width: 100%;
     justify-content: flex-start;
     padding: 0;
@@ -2254,6 +2271,11 @@ input[type="radio"]:checked + label span {
   }
   .Page:nth-child(5) {
     width: 100vw;
+  }
+  .mapEl {
+    top: 56%;
+    width: 95%;
+    height: 42%;
   }
 }
 @media screen and (max-width: 414px) {
