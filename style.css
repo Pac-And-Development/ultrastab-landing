@@ -2283,6 +2283,12 @@ input[type="radio"]:checked + label span {
     font-size: 54px;
     line-height: 58px;
   }
+   .circle {
+     margin-top: 10px;
+   }
+  .circle:nth-child(5) {
+    margin-right: 50px;
+  }
   .Form {
     margin-top: 60px;
     position: absolute;
@@ -2294,6 +2300,19 @@ input[type="radio"]:checked + label span {
     padding: 30px 44px;
     height: 485px;
   }
+  .Page:nth-child(2) h2 {
+    margin-top: 88px;
+}
+.Page:nth-child(3) h2 {
+  margin-top: 54px;
+}
+.Page:nth-child(3) {
+  height: 990px;
+}
+.companyInfo {
+  top: 119%;
+  left: 14%;
+}
   .aboutInfo p {
     font-size: 15px;
     line-height: 22px;
@@ -2306,10 +2325,16 @@ input[type="radio"]:checked + label span {
     height: 217px;
     top: 298px;
   }
-  .companyInfo {
-    top: 112%;
-    left: 14%;
-  }
+  .Contacts {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 7%;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0;
+    z-index: 2;
+}
   .infoCont p {
     width: 95%;
     font-family: Roboto;
@@ -2320,13 +2345,19 @@ input[type="radio"]:checked + label span {
     color: #242329;
     margin: 0;
   }
+  .mapEl {
+    top: 55%;
+    width: 95%;
+    height: 44%;
+}
   .writeBtn {
     margin-top: -97%;
     margin-left: 47%;
   }
-  .Page:nth-child(5) {
-    height: 1300px !important;
-  }
+  .Page:nth-child(1) {
+    height: 1180px;
+}
+
 }
 @media screen and (max-width: 375px) {
   .nextText {
