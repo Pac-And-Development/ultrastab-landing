@@ -1537,6 +1537,7 @@ input[type="radio"]:checked + label span {
   }
   .primPage {
     margin: 0;
+    height: 100%;
   }
   .primPage .infoName p {
     width: 90%;
@@ -2040,7 +2041,8 @@ input[type="radio"]:checked + label span {
     margin-top: 155px;
   }
   .noSliderCont {
-    overflow-y: hidden;
+    overflow-y: scroll;
+    height: 100%;
   }
   .benefits {
     margin-top: 10px;
