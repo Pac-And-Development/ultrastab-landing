@@ -741,7 +741,7 @@ body {
 .navButtons {
   margin-top: 40px;
   margin-left: 80%;
-  display: flex;
+  display: none;
   flex-direction: row;
 }
 
@@ -818,7 +818,6 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
-  width: 60%;
   transition: 400ms all;
   line-height: 24px;
   color: white;
@@ -826,15 +825,15 @@ body {
 }
 
 .swiper {
-  overflow: visible !important;
   margin: 0 !important;
+  width: 100%;
 }
 
 .circleSecond {
   transition: 600ms all;
   background: #ffffff;
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   border-radius: 50%;
   display: flex;
   flex-direction: row;
@@ -848,6 +847,7 @@ body {
   text-transform: uppercase;
   margin-top: 31px;
   line-height: 13px !important;
+  display: none;
 }
 
 .swiper p:nth-child(3) {
@@ -859,12 +859,15 @@ body {
   line-height: 24px;
   color: white;
   margin-bottom: 0;
+  margin-left: 20px;
   width: 100%;
 }
 
 .swiper-slide {
   min-width: 180px !important;
-  max-width: 288px !important;
+  height: max-content !important;
+  display: flex;
+  align-items: center;
 }
 
 /*--------------------------- PAGE PREIMYSHESTVA ----------------*/
@@ -1274,9 +1277,7 @@ input[type="radio"]:checked + label span {
   .circleSecond p {
     font-size: 20px !important;
   }
-  .swiper-slide {
-    max-width: 218px !important;
-  }
+
   .Head .headerContacts p {
     font-size: 16px;
   }
@@ -1729,11 +1730,8 @@ input[type="radio"]:checked + label span {
     height: 960px;
   }
   .Page:nth-child(5) {
-  
     height: 800px;
   }
-
-
 
   .Page:nth-child(2) h2 {
     color: white;
@@ -1793,13 +1791,11 @@ input[type="radio"]:checked + label span {
   }
 }
 @media screen and (max-width: 568px) {
-
-.background {
-  background-image: url(./images/568.png);
-}
+  .background {
+    background-image: url(./images/568.png);
+  }
   .Page:nth-child(1) {
     height: 950px;
-  
   }
   .Page:nth-child(2) {
     height: 860px;
@@ -1812,7 +1808,6 @@ input[type="radio"]:checked + label span {
     height: 980px;
   }
   .Page:nth-child(5) {
-  
     height: 800px;
   }
 
@@ -1826,18 +1821,18 @@ input[type="radio"]:checked + label span {
     justify-content: flex-start;
     padding: 21px 19px;
     height: 307px;
-}
-.Page:nth-child(3) h2 {
-  margin-top: 30px;
-}
-.Page:nth-child(4) h2 {
-  margin-top: -3px;
-  color: white;
-}
+  }
+  .Page:nth-child(3) h2 {
+    margin-top: 30px;
+  }
+  .Page:nth-child(4) h2 {
+    margin-top: -3px;
+    color: white;
+  }
   .Page:nth-child(2) h2 {
     color: white;
     margin-top: 88px;
-}
+  }
   .Form h3 {
     font-size: 20px;
     line-height: 36px;
@@ -1894,12 +1889,12 @@ input[type="radio"]:checked + label span {
   }
   .Page:nth-child(5) h2 {
     margin-top: 53px;
-}
-.navButtons {
+  }
+  .navButtons {
     margin-left: auto;
     margin-right: auto;
     padding-right: 12%;
-}
+  }
 }
 @media screen and (max-width: 480px) {
   .background {
@@ -1935,7 +1930,7 @@ input[type="radio"]:checked + label span {
     justify-content: flex-start;
     padding: 30px 34px;
     height: 490px;
-}
+  }
   .Form p {
     font-size: 10px;
     line-height: 12px;
@@ -2082,7 +2077,7 @@ input[type="radio"]:checked + label span {
   }
   .aboutInfo {
     height: 457px;
-}
+  }
   .aboutImg {
     right: 110px;
     width: 325px;
@@ -2148,9 +2143,8 @@ input[type="radio"]:checked + label span {
 @media screen and (max-width: 430px) {
   .background {
     background-image: url(./images/4300.png);
-  
+
     height: 4640px;
- 
   }
   main {
     padding: 0;
@@ -2160,7 +2154,7 @@ input[type="radio"]:checked + label span {
   .nextText {
     font-size: 56px;
     line-height: 66px;
-}
+  }
   .adaptInfo {
     display: flex;
     margin-top: 99px;
@@ -2208,7 +2202,7 @@ input[type="radio"]:checked + label span {
     margin-right: 10px;
     margin-left: 0;
   }
- 
+
   .Page:nth-child(1) {
     height: 1150px;
   }
@@ -2220,7 +2214,7 @@ input[type="radio"]:checked + label span {
   }
   .Page:nth-child(3) {
     height: 1070px;
-}
+  }
   footer {
     display: none;
   }
@@ -2237,7 +2231,7 @@ input[type="radio"]:checked + label span {
   }
   .Page:nth-child(3) h2 {
     margin-top: 100px;
-}
+  }
   .aboutInfo p {
     font-size: 15px;
     line-height: 22px;
@@ -2261,7 +2255,7 @@ input[type="radio"]:checked + label span {
   }
   .Page:nth-child(4) {
     height: 1200px !important;
-}
+  }
   .Contacts {
     display: flex;
     flex-direction: row;
@@ -2290,9 +2284,9 @@ input[type="radio"]:checked + label span {
     font-size: 54px;
     line-height: 58px;
   }
-   .circle {
-     margin-top: 10px;
-   }
+  .circle {
+    margin-top: 10px;
+  }
   .circle:nth-child(5) {
     margin-right: 50px;
   }
@@ -2309,17 +2303,17 @@ input[type="radio"]:checked + label span {
   }
   .Page:nth-child(2) h2 {
     margin-top: 88px;
-}
-.Page:nth-child(3) h2 {
-  margin-top: 54px;
-}
-.Page:nth-child(3) {
-  height: 990px;
-}
-.companyInfo {
-  top: 119%;
-  left: 14%;
-}
+  }
+  .Page:nth-child(3) h2 {
+    margin-top: 54px;
+  }
+  .Page:nth-child(3) {
+    height: 990px;
+  }
+  .companyInfo {
+    top: 119%;
+    left: 14%;
+  }
   .aboutInfo p {
     font-size: 15px;
     line-height: 22px;
@@ -2341,7 +2335,7 @@ input[type="radio"]:checked + label span {
     justify-content: flex-start;
     padding: 0;
     z-index: 2;
-}
+  }
   .infoCont p {
     width: 95%;
     font-family: Roboto;
@@ -2356,24 +2350,22 @@ input[type="radio"]:checked + label span {
     top: 55%;
     width: 95%;
     height: 44%;
-}
+  }
   .writeBtn {
     margin-top: -97%;
     margin-left: 47%;
   }
   .Page:nth-child(1) {
     height: 1180px;
-}
-
+  }
 }
 @media screen and (max-width: 375px) {
   .background {
     background-image: url(./images/375.png);
-  
+
     height: 4640px;
- 
   }
-  
+
   .noSliderCont:last-child {
     display: none;
   }
@@ -2402,13 +2394,13 @@ input[type="radio"]:checked + label span {
   }
   .circle:nth-child(4) {
     margin-right: 48px;
-}
-.circle:nth-child(5) {
-  margin-right: 30px;
-}
-.Page:nth-child(2) h2 {
-  margin-top: 50px;
-}
+  }
+  .circle:nth-child(5) {
+    margin-right: 30px;
+  }
+  .Page:nth-child(2) h2 {
+    margin-top: 50px;
+  }
   .Page:nth-child(4) h2 {
     margin-top: 52px;
     color: white;
@@ -2425,7 +2417,7 @@ input[type="radio"]:checked + label span {
     line-height: 24px;
     margin-top: 31px;
     margin-bottom: 5%;
-}
+  }
   .aboutInfo p {
     font-size: 15px;
     line-height: 21px;
@@ -2442,7 +2434,7 @@ input[type="radio"]:checked + label span {
   .companyInfo {
     top: 122%;
     left: 10%;
-}
+  }
   a {
     color: inherit;
   }
@@ -2459,20 +2451,20 @@ input[type="radio"]:checked + label span {
   }
   .Page:nth-child(5) h2 {
     margin-top: 54px;
-}
-.mapEl {
-  top: 60%;
-  width: 95%;
-  height: 40%;
-}
+  }
+  .mapEl {
+    top: 60%;
+    width: 95%;
+    height: 40%;
+  }
 }
 @media screen and (max-width: 320px) {
   .circle:nth-child(4) {
     margin-right: 15px;
-}
-.circle:nth-child(5) {
-  margin-right: 15px;
-}
+  }
+  .circle:nth-child(5) {
+    margin-right: 15px;
+  }
   /**/
   .background {
     background-image: url(./images/aaaa320.png);
@@ -2502,10 +2494,10 @@ input[type="radio"]:checked + label span {
   }
   .Page:nth-child(5) h2 {
     margin-top: 10px;
-}
-.Page:nth-child(4) {
-  height: 1300px !important;
-}
+  }
+  .Page:nth-child(4) {
+    height: 1300px !important;
+  }
   .adaptInfo {
     display: flex;
     margin-top: 63px;
@@ -2536,11 +2528,10 @@ input[type="radio"]:checked + label span {
     line-height: 20px;
     width: 100%;
     margin-bottom: 5%;
-
   }
   .Page:nth-child(2) h2 {
     margin-top: 0px;
-}
+  }
   .circle p {
     font-size: 11px;
     line-height: 13px;
