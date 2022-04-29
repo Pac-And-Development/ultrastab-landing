@@ -26,3 +26,14 @@ typecards.map((el, i) => {
     }
   });
 });
+
+const changeHandler = e => {
+  if (e.target.value.length) {
+    e.target.nextElementSibling.classList.add('shrink-label')
+  } else {
+    e.target.nextElementSibling.classList.remove('shrink-label')
+  }
+}
+
+const formInputs = Array.from(document.querySelectorAll('.inputLabel input'))
+formInputs.forEach(input => input.addEventListener('change', changeHandler))
