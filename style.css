@@ -676,6 +676,15 @@ body {
   position: relative;
   width: 100%;
 }
+.form-label:hover {
+  cursor: pointer;
+}
+.shrink-label {
+  top: 4px!important;
+  font-size: 10px!important;
+  line-height: 12px!important;
+  color: rgba(36, 35, 41, 0.5);
+}
 .lineLeftBlock {
   width: 3px;
   right: 0;
