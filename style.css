@@ -127,7 +127,7 @@ body {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s all;
 }
 
-.headerContacts svg:not(:last-child) {
+.headerContacts a:not(:last-child) {
   margin-right: 14px;
 }
 
@@ -141,6 +141,13 @@ body {
 
 .Red .Head .headerInfo .headerContacts svg path {
   fill: white;
+}
+
+@media (max-width: 768px) {
+  .Purple .Head .headerInfo .headerContacts svg path,
+  .Red .Head .headerInfo .headerContacts svg path {
+    fill: #000;
+  }
 }
 /*---------------------- Menu----------------- */
 
@@ -526,6 +533,7 @@ div h2 {
   margin: 0 20px;
   color: #242329;
   margin-bottom: 4%;
+  text-decoration: none;
 }
 
 .menuBlock span {

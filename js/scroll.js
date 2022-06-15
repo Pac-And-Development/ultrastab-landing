@@ -1,3 +1,5 @@
+const menuBlocklinks = document.querySelectorAll('.menuBlock__link');
+
 const helper = {
   getDelta(event) {
     if (event.wheelDelta) {
@@ -33,6 +35,10 @@ class ScrollPages {
     this.pageNumber = document.querySelector(".pageNumber");
     this.blockRefs = Array.prototype.slice
       .call(document.querySelector(".blockRefs").childNodes)
+      .filter((el) => el.tagName === "A");
+    this.navbar = document.getElementById("nav-icon4");
+    this.menuRefs = Array.prototype.slice
+      .call(document.querySelector(".menuBlock").childNodes)
       .filter((el) => el.tagName === "A");
     this.feature = document.querySelector(".feature");
     this.lineLeftBlock = document.querySelector(".lineLeftBlock");
@@ -288,6 +294,13 @@ class ScrollPages {
         this.scrollTo(i + 2);
       })
     );
+    this.menuRefs.map((el, i) =>
+      el.addEventListener("click", () => {
+        this.scrollTo(i + 2);
+        this.navbar.classList.toggle("open");
+        console.log('click')
+      })
+    );
     window.addEventListener("resize", handleResize);
     feat.addEventListener("click", () => {
       if (this.currentPageNumber === 5) {
@@ -301,7 +314,17 @@ class ScrollPages {
 
 if (document.documentElement.clientWidth > 640) {
   document.addEventListener("DOMContentLoaded", function () {
+    menuBlocklinks.forEach(link => link.removeAttribute('href'));
     var s = new ScrollPages(1, 5, document.getElementById("all-pages"));
     s.init();
   });
+}
+
+if (document.documentElement.clientWidth <= 640) {
+  menuBlocklinks.forEach((link, i) => {
+    link.setAttribute('href', '#page_' + i)
+    link.addEventListener('click', () => {
+      navbar.classList.toggle('open')
+    })
+  })
 }
