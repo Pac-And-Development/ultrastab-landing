@@ -910,19 +910,20 @@ div h2 {
 .benefits {
   position: relative;
   width: 50%;
-  padding: 6vw 5vw 6vw 0;
+  padding: 0 0 6vw 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
 }
 .bnfRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*justify-content: flex-start;*/
+  /*align-items: center;*/
 }
 .bnfCircle {
+  display: none;
   background: #ffffff;
   min-width: 90px;
   min-width: none;
@@ -930,13 +931,17 @@ div h2 {
   border-radius: 50%;
 }
 .bnfTire {
+  display: none;
   min-width: 36px;
   height: 2px;
   margin-left: 4%;
   margin-right: 4%;
   background: #242329;
 }
-
+.bnfTitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
 .background.five ~ .Foot .arrow {
   transform: scale(-1, -1);
 }
@@ -995,9 +1000,9 @@ div h2 {
   margin-bottom: 3%;
 }
 .aboutInfo {
-  padding: 30px 50px;
-  background: rgba(255, 255, 255, 0.26);
-  border-top: 3px solid #ffffff;
+  /*padding: 30px 50px;*/
+  /*background: rgba(255, 255, 255, 0.26);*/
+  /*border-top: 3px solid #ffffff;*/
   position: relative;
 }
 .aboutInfo p {
@@ -1011,7 +1016,8 @@ div h2 {
 }
 .aboutImg {
   position: absolute;
-  background-image: url(images/img.png);
+  /*background-image: url(images/img.png);*/
+  background-image: url(images/new_team_photo.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   right: 0;
@@ -1024,7 +1030,8 @@ div h2 {
 .companyInfo {
   position: absolute;
   z-index: 1;
-  display: flex;
+  /*display: flex;*/
+  display: none;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1266,7 +1273,7 @@ input[type="radio"]:checked + label span {
     font-size: 14px;
   }
   .aboutInfo {
-    padding: 12px 38px;
+    /*padding: 12px 38px;*/
   }
   .aboutInfo p {
     font-size: 14px;
@@ -1576,7 +1583,7 @@ input[type="radio"]:checked + label span {
     flex-direction: column;
   }
   .benefits {
-    margin-top: 80px;
+    /*margin-top: 80px;*/
     margin-left: auto;
   }
   .bnfCircle {
@@ -1611,7 +1618,7 @@ input[type="radio"]:checked + label span {
   }
   .aboutInfo {
     width: 100%;
-    background: rgba(255, 255, 255, 0.26);
+    /*background: rgba(255, 255, 255, 0.26);*/
     height: 410px;
     z-index: 1;
   }

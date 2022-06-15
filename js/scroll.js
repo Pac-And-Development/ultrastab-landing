@@ -42,6 +42,8 @@ class ScrollPages {
 		this.menuRefs = Array.prototype.slice
 			.call(document.querySelector(".menuBlock").childNodes)
 			.filter((el) => el.tagName === "A");
+		this.paymentRequest = document.querySelector('.paymentRequest');
+		this.header = document.querySelector('.Head');
 		this.threadCircles = document.querySelectorAll(".circle");
 		this.feature = document.querySelector(".feature");
 		this.lineLeftBlock = document.querySelector(".lineLeftBlock");
@@ -317,6 +319,8 @@ class ScrollPages {
 			this.scrollTo(2);
 		}))
 
+		this.paymentRequest.addEventListener('click', () => this.scrollTo(1))
+
 		window.addEventListener("resize", handleResize);
 		feat.addEventListener("click", () => {
 			if (this.currentPageNumber === 5) {
@@ -359,5 +363,4 @@ if (document.documentElement.clientWidth <= 640) {
 			behavior: 'smooth'
 		});
 	}));
-
 }
