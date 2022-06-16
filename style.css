@@ -1924,7 +1924,7 @@ input[type="radio"]:checked + label span {
 }
 @media screen and (max-width: 480px) {
   .background {
-    background-image: url(./images/aa1.png);
+    background-image: url(images/aa1.png);
     background-repeat: no-repeat;
     background-size: contain;
     top: 0;
@@ -2168,7 +2168,7 @@ input[type="radio"]:checked + label span {
 }
 @media screen and (max-width: 430px) {
   .background {
-    background-image: url(./images/4300.png);
+    background-image: url(images/4300.png);
 
     height: 4640px;
   }
@@ -2387,7 +2387,7 @@ input[type="radio"]:checked + label span {
 }
 @media screen and (max-width: 375px) {
   .background {
-    background-image: url(./images/375.png);
+    background-image: url(images/375.png);
 
     height: 4640px;
   }
@@ -2493,7 +2493,7 @@ input[type="radio"]:checked + label span {
   }
   /**/
   .background {
-    background-image: url(./images/aaaa320.png);
+    background-image: url(images/aaaa320.png);
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
