@@ -1721,6 +1721,10 @@ input[type="radio"]:checked + label span {
   }
   .aboutInfo {
     height: 500px;
+    position: initial;
+  }
+  .aboutInfo p {
+    width: 85%;
   }
   .Page {
     overflow-x: hidden;
@@ -1781,8 +1785,11 @@ input[type="radio"]:checked + label span {
     color: white;
   }
   .aboutImg {
-    width: 307px;
-    height: 256px;
+    position: initial;
+    width: 95%;
+    height: 100%;
+    /*width: 307px;*/
+    /*height: 256px;*/
   }
   .aboutInfo {
     height: 445px;
@@ -1895,8 +1902,9 @@ input[type="radio"]:checked + label span {
   }
 
   .aboutImg {
-    width: 264px;
-    height: 247px;
+    width: 85%;
+    /*width: 264px;*/
+    /*height: 247px;*/
   }
   .aboutInfo {
     height: 491px;
@@ -2095,21 +2103,22 @@ input[type="radio"]:checked + label span {
   }
   .About {
     margin: 0;
+    padding-left: 20px;
   }
   .aboutInfo {
-    padding: 1px 22px;
+    /*padding: 1px 22px;*/
     border-top: none;
     background: transparent;
   }
   .aboutInfo {
     height: 457px;
   }
-  .aboutImg {
-    right: 110px;
-    width: 325px;
-    height: 217px;
-    top: 323px;
-  }
+  /*.aboutImg {*/
+  /*  right: 110px;*/
+  /*  width: 325px;*/
+  /*  height: 217px;*/
+  /*  top: 323px;*/
+  /*}*/
   .aboutInfo p {
     font-size: 15px;
     line-height: 22px;
@@ -2249,7 +2258,8 @@ input[type="radio"]:checked + label span {
     flex-direction: column;
   }
   .About {
-    margin-left: 35px;
+    /*margin-left: 50px;*/
+    padding-left: 40px;
   }
   .Page:nth-child(4) h2 {
     margin-top: 22px;
