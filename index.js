@@ -1,4 +1,8 @@
 const navbar = document.getElementById("nav-icon4");
+const radioBtn1 = document.getElementById('option-one');
+const radioBtn2 = document.getElementById('option-two');
+const address1 = document.querySelector('.address-one');
+const address2 = document.querySelector('.address-two');
 
 navbar.addEventListener("click", () => {
   navbar.classList.toggle("open");
@@ -37,3 +41,19 @@ const changeHandler = e => {
 
 const formInputs = Array.from(document.querySelectorAll('.inputLabel input'))
 formInputs.forEach(input => input.addEventListener('change', changeHandler))
+
+address2.style.display = 'none'
+
+radioBtn1.addEventListener('change', () => {
+  if (radioBtn1.checked) {
+    address2.style.display = 'none'
+    address1.style.display = 'block'
+  }
+})
+
+radioBtn2.addEventListener('change', () => {
+  if (radioBtn2.checked) {
+    address1.style.display = 'none'
+    address2.style.display = 'block'
+  }
+})
